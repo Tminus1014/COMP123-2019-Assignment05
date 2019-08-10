@@ -37,30 +37,18 @@
             this.btnFinish = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.grpSystemComponents = new System.Windows.Forms.GroupBox();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.tblComponentsSubI = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblManufacturer = new System.Windows.Forms.Label();
-            this.lblCondition = new System.Windows.Forms.Label();
-            this.lblModel = new System.Windows.Forms.Label();
-            this.lblPlatform = new System.Windows.Forms.Label();
-            this.txtPlatform = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.tblComponentsSubII = new System.Windows.Forms.TableLayoutPanel();
             this.lblLcdSize = new System.Windows.Forms.Label();
             this.lblMemory = new System.Windows.Forms.Label();
             this.lblCpuBrand = new System.Windows.Forms.Label();
             this.lblCpuType = new System.Windows.Forms.Label();
             this.lblCpuNumber = new System.Windows.Forms.Label();
+            this.txtLcdSize = new System.Windows.Forms.TextBox();
             this.lblCpuSpeed = new System.Windows.Forms.Label();
             this.lblHddSize = new System.Windows.Forms.Label();
             this.lblGpuType = new System.Windows.Forms.Label();
             this.lblWebcam = new System.Windows.Forms.Label();
             this.lblOperatingSystem = new System.Windows.Forms.Label();
-            this.txtLcdSize = new System.Windows.Forms.TextBox();
             this.txtMemory = new System.Windows.Forms.TextBox();
             this.txtCpuBrand = new System.Windows.Forms.TextBox();
             this.txtCpuType = new System.Windows.Forms.TextBox();
@@ -70,25 +58,37 @@
             this.txtGpuType = new System.Windows.Forms.TextBox();
             this.txtWebcam = new System.Windows.Forms.TextBox();
             this.txtOperatingSystem = new System.Windows.Forms.TextBox();
+            this.tblComponentsSubI = new System.Windows.Forms.TableLayoutPanel();
+            this.txtPlatform = new System.Windows.Forms.TextBox();
+            this.lblManufacturer = new System.Windows.Forms.Label();
+            this.lblCondition = new System.Windows.Forms.Label();
+            this.lblModel = new System.Windows.Forms.Label();
+            this.lblPlatform = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpYourPrice = new System.Windows.Forms.GroupBox();
+            this.tblTotalPrice = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.txtTotalPrice = new System.Windows.Forms.TextBox();
             this.tblPrices = new System.Windows.Forms.TableLayoutPanel();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblSalesTax = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtSalesTax = new System.Windows.Forms.TextBox();
-            this.lblTotalPrice = new System.Windows.Forms.Label();
-            this.txtTotalPrice = new System.Windows.Forms.TextBox();
-            this.tblTotalPrice = new System.Windows.Forms.TableLayoutPanel();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.mnuOrder.SuspendLayout();
             this.grpSystemComponents.SuspendLayout();
+            this.tblComponentsSubII.SuspendLayout();
             this.tblComponentsSubI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tblComponentsSubII.SuspendLayout();
             this.grpYourPrice.SuspendLayout();
-            this.tblPrices.SuspendLayout();
             this.tblTotalPrice.SuspendLayout();
+            this.tblPrices.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnuOrder
@@ -205,141 +205,6 @@
             this.grpSystemComponents.TabStop = false;
             this.grpSystemComponents.Text = "System Components";
             // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(3, 24);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(555, 437);
-            this.shapeContainer1.TabIndex = 0;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.Color.Gainsboro;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = -8;
-            this.lineShape1.X2 = 565;
-            this.lineShape1.Y1 = 96;
-            this.lineShape1.Y2 = 96;
-            // 
-            // tblComponentsSubI
-            // 
-            this.tblComponentsSubI.ColumnCount = 4;
-            this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.16091F));
-            this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.83968F));
-            this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.15974F));
-            this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.83968F));
-            this.tblComponentsSubI.Controls.Add(this.txtPlatform, 1, 0);
-            this.tblComponentsSubI.Controls.Add(this.lblManufacturer, 0, 1);
-            this.tblComponentsSubI.Controls.Add(this.lblCondition, 0, 0);
-            this.tblComponentsSubI.Controls.Add(this.lblModel, 2, 1);
-            this.tblComponentsSubI.Controls.Add(this.lblPlatform, 2, 0);
-            this.tblComponentsSubI.Controls.Add(this.textBox1, 1, 1);
-            this.tblComponentsSubI.Controls.Add(this.textBox2, 3, 0);
-            this.tblComponentsSubI.Controls.Add(this.textBox3, 3, 1);
-            this.tblComponentsSubI.Location = new System.Drawing.Point(9, 24);
-            this.tblComponentsSubI.Name = "tblComponentsSubI";
-            this.tblComponentsSubI.RowCount = 2;
-            this.tblComponentsSubI.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblComponentsSubI.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tblComponentsSubI.Size = new System.Drawing.Size(546, 82);
-            this.tblComponentsSubI.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(605, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblManufacturer
-            // 
-            this.lblManufacturer.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblManufacturer.AutoSize = true;
-            this.lblManufacturer.Location = new System.Drawing.Point(11, 51);
-            this.lblManufacturer.Name = "lblManufacturer";
-            this.lblManufacturer.Size = new System.Drawing.Size(106, 21);
-            this.lblManufacturer.TabIndex = 2;
-            this.lblManufacturer.Text = "Manufacturer";
-            this.lblManufacturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblCondition
-            // 
-            this.lblCondition.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblCondition.AutoSize = true;
-            this.lblCondition.Location = new System.Drawing.Point(40, 10);
-            this.lblCondition.Name = "lblCondition";
-            this.lblCondition.Size = new System.Drawing.Size(77, 21);
-            this.lblCondition.TabIndex = 2;
-            this.lblCondition.Text = "Condition";
-            this.lblCondition.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblModel
-            // 
-            this.lblModel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(334, 51);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(55, 21);
-            this.lblModel.TabIndex = 2;
-            this.lblModel.Text = "Model";
-            this.lblModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblPlatform
-            // 
-            this.lblPlatform.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblPlatform.AutoSize = true;
-            this.lblPlatform.Location = new System.Drawing.Point(319, 10);
-            this.lblPlatform.Name = "lblPlatform";
-            this.lblPlatform.Size = new System.Drawing.Size(70, 21);
-            this.lblPlatform.TabIndex = 2;
-            this.lblPlatform.Text = "Platform";
-            this.lblPlatform.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txtPlatform
-            // 
-            this.txtPlatform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPlatform.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlatform.Location = new System.Drawing.Point(123, 8);
-            this.txtPlatform.Name = "txtPlatform";
-            this.txtPlatform.ReadOnly = true;
-            this.txtPlatform.Size = new System.Drawing.Size(146, 25);
-            this.txtPlatform.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(123, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(146, 25);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(395, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(148, 25);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(395, 49);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(148, 25);
-            this.textBox3.TabIndex = 2;
-            // 
             // tblComponentsSubII
             // 
             this.tblComponentsSubII.ColumnCount = 2;
@@ -436,6 +301,17 @@
             this.lblCpuNumber.Text = "CPU Number";
             this.lblCpuNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // txtLcdSize
+            // 
+            this.txtLcdSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLcdSize.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLcdSize.Location = new System.Drawing.Point(122, 3);
+            this.txtLcdSize.Name = "txtLcdSize";
+            this.txtLcdSize.ReadOnly = true;
+            this.txtLcdSize.Size = new System.Drawing.Size(421, 25);
+            this.txtLcdSize.TabIndex = 2;
+            this.txtLcdSize.TabStop = false;
+            // 
             // lblCpuSpeed
             // 
             this.lblCpuSpeed.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -491,16 +367,6 @@
             this.lblOperatingSystem.Text = "OS";
             this.lblOperatingSystem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtLcdSize
-            // 
-            this.txtLcdSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLcdSize.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLcdSize.Location = new System.Drawing.Point(122, 3);
-            this.txtLcdSize.Name = "txtLcdSize";
-            this.txtLcdSize.ReadOnly = true;
-            this.txtLcdSize.Size = new System.Drawing.Size(421, 25);
-            this.txtLcdSize.TabIndex = 2;
-            // 
             // txtMemory
             // 
             this.txtMemory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -510,6 +376,7 @@
             this.txtMemory.ReadOnly = true;
             this.txtMemory.Size = new System.Drawing.Size(421, 25);
             this.txtMemory.TabIndex = 2;
+            this.txtMemory.TabStop = false;
             // 
             // txtCpuBrand
             // 
@@ -520,6 +387,7 @@
             this.txtCpuBrand.ReadOnly = true;
             this.txtCpuBrand.Size = new System.Drawing.Size(421, 25);
             this.txtCpuBrand.TabIndex = 2;
+            this.txtCpuBrand.TabStop = false;
             // 
             // txtCpuType
             // 
@@ -530,6 +398,7 @@
             this.txtCpuType.ReadOnly = true;
             this.txtCpuType.Size = new System.Drawing.Size(421, 25);
             this.txtCpuType.TabIndex = 2;
+            this.txtCpuType.TabStop = false;
             // 
             // txtCpuNumber
             // 
@@ -540,6 +409,7 @@
             this.txtCpuNumber.ReadOnly = true;
             this.txtCpuNumber.Size = new System.Drawing.Size(421, 25);
             this.txtCpuNumber.TabIndex = 2;
+            this.txtCpuNumber.TabStop = false;
             // 
             // txtCpuSpeed
             // 
@@ -550,6 +420,7 @@
             this.txtCpuSpeed.ReadOnly = true;
             this.txtCpuSpeed.Size = new System.Drawing.Size(421, 25);
             this.txtCpuSpeed.TabIndex = 2;
+            this.txtCpuSpeed.TabStop = false;
             // 
             // txtHddSize
             // 
@@ -560,6 +431,7 @@
             this.txtHddSize.ReadOnly = true;
             this.txtHddSize.Size = new System.Drawing.Size(421, 25);
             this.txtHddSize.TabIndex = 2;
+            this.txtHddSize.TabStop = false;
             // 
             // txtGpuType
             // 
@@ -570,6 +442,7 @@
             this.txtGpuType.ReadOnly = true;
             this.txtGpuType.Size = new System.Drawing.Size(421, 25);
             this.txtGpuType.TabIndex = 2;
+            this.txtGpuType.TabStop = false;
             // 
             // txtWebcam
             // 
@@ -580,6 +453,7 @@
             this.txtWebcam.ReadOnly = true;
             this.txtWebcam.Size = new System.Drawing.Size(421, 25);
             this.txtWebcam.TabIndex = 2;
+            this.txtWebcam.TabStop = false;
             // 
             // txtOperatingSystem
             // 
@@ -590,6 +464,146 @@
             this.txtOperatingSystem.ReadOnly = true;
             this.txtOperatingSystem.Size = new System.Drawing.Size(421, 25);
             this.txtOperatingSystem.TabIndex = 2;
+            this.txtOperatingSystem.TabStop = false;
+            // 
+            // tblComponentsSubI
+            // 
+            this.tblComponentsSubI.ColumnCount = 4;
+            this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.16091F));
+            this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.83968F));
+            this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.15974F));
+            this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.83968F));
+            this.tblComponentsSubI.Controls.Add(this.txtPlatform, 1, 0);
+            this.tblComponentsSubI.Controls.Add(this.lblManufacturer, 0, 1);
+            this.tblComponentsSubI.Controls.Add(this.lblCondition, 0, 0);
+            this.tblComponentsSubI.Controls.Add(this.lblModel, 2, 1);
+            this.tblComponentsSubI.Controls.Add(this.lblPlatform, 2, 0);
+            this.tblComponentsSubI.Controls.Add(this.textBox1, 1, 1);
+            this.tblComponentsSubI.Controls.Add(this.textBox2, 3, 0);
+            this.tblComponentsSubI.Controls.Add(this.textBox3, 3, 1);
+            this.tblComponentsSubI.Location = new System.Drawing.Point(9, 24);
+            this.tblComponentsSubI.Name = "tblComponentsSubI";
+            this.tblComponentsSubI.RowCount = 2;
+            this.tblComponentsSubI.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblComponentsSubI.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tblComponentsSubI.Size = new System.Drawing.Size(546, 82);
+            this.tblComponentsSubI.TabIndex = 1;
+            // 
+            // txtPlatform
+            // 
+            this.txtPlatform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPlatform.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlatform.Location = new System.Drawing.Point(123, 8);
+            this.txtPlatform.Name = "txtPlatform";
+            this.txtPlatform.ReadOnly = true;
+            this.txtPlatform.Size = new System.Drawing.Size(146, 25);
+            this.txtPlatform.TabIndex = 2;
+            this.txtPlatform.TabStop = false;
+            // 
+            // lblManufacturer
+            // 
+            this.lblManufacturer.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblManufacturer.AutoSize = true;
+            this.lblManufacturer.Location = new System.Drawing.Point(11, 51);
+            this.lblManufacturer.Name = "lblManufacturer";
+            this.lblManufacturer.Size = new System.Drawing.Size(106, 21);
+            this.lblManufacturer.TabIndex = 2;
+            this.lblManufacturer.Text = "Manufacturer";
+            this.lblManufacturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblCondition
+            // 
+            this.lblCondition.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblCondition.AutoSize = true;
+            this.lblCondition.Location = new System.Drawing.Point(40, 10);
+            this.lblCondition.Name = "lblCondition";
+            this.lblCondition.Size = new System.Drawing.Size(77, 21);
+            this.lblCondition.TabIndex = 2;
+            this.lblCondition.Text = "Condition";
+            this.lblCondition.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblModel
+            // 
+            this.lblModel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblModel.AutoSize = true;
+            this.lblModel.Location = new System.Drawing.Point(334, 51);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(55, 21);
+            this.lblModel.TabIndex = 2;
+            this.lblModel.Text = "Model";
+            this.lblModel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblPlatform
+            // 
+            this.lblPlatform.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblPlatform.AutoSize = true;
+            this.lblPlatform.Location = new System.Drawing.Point(319, 10);
+            this.lblPlatform.Name = "lblPlatform";
+            this.lblPlatform.Size = new System.Drawing.Size(70, 21);
+            this.lblPlatform.TabIndex = 2;
+            this.lblPlatform.Text = "Platform";
+            this.lblPlatform.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(123, 49);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(146, 25);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(395, 8);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(148, 25);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(395, 49);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(148, 25);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.TabStop = false;
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(3, 24);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(555, 437);
+            this.shapeContainer1.TabIndex = 0;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = -8;
+            this.lineShape1.X2 = 565;
+            this.lineShape1.Y1 = 96;
+            this.lineShape1.Y2 = 96;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(605, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // grpYourPrice
             // 
@@ -602,6 +616,44 @@
             this.grpYourPrice.TabIndex = 12;
             this.grpYourPrice.TabStop = false;
             this.grpYourPrice.Text = "Your Price";
+            // 
+            // tblTotalPrice
+            // 
+            this.tblTotalPrice.ColumnCount = 2;
+            this.tblTotalPrice.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.94382F));
+            this.tblTotalPrice.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.05618F));
+            this.tblTotalPrice.Controls.Add(this.lblTotalPrice, 0, 0);
+            this.tblTotalPrice.Controls.Add(this.txtTotalPrice, 1, 0);
+            this.tblTotalPrice.Location = new System.Drawing.Point(6, 160);
+            this.tblTotalPrice.Name = "tblTotalPrice";
+            this.tblTotalPrice.RowCount = 1;
+            this.tblTotalPrice.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tblTotalPrice.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tblTotalPrice.Size = new System.Drawing.Size(178, 40);
+            this.tblTotalPrice.TabIndex = 1;
+            // 
+            // lblTotalPrice
+            // 
+            this.lblTotalPrice.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Location = new System.Drawing.Point(3, 11);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(53, 21);
+            this.lblTotalPrice.TabIndex = 2;
+            this.lblTotalPrice.Text = "TOTAL";
+            this.lblTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtTotalPrice
+            // 
+            this.txtTotalPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotalPrice.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalPrice.Location = new System.Drawing.Point(83, 9);
+            this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.ReadOnly = true;
+            this.txtTotalPrice.Size = new System.Drawing.Size(92, 25);
+            this.txtTotalPrice.TabIndex = 2;
+            this.txtTotalPrice.Text = "$1,694.99";
+            this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tblPrices
             // 
@@ -666,44 +718,6 @@
             this.txtSalesTax.Text = "$195.00";
             this.txtSalesTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // lblTotalPrice
-            // 
-            this.lblTotalPrice.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Location = new System.Drawing.Point(3, 11);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(53, 21);
-            this.lblTotalPrice.TabIndex = 2;
-            this.lblTotalPrice.Text = "TOTAL";
-            this.lblTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtTotalPrice
-            // 
-            this.txtTotalPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalPrice.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalPrice.Location = new System.Drawing.Point(83, 9);
-            this.txtTotalPrice.Name = "txtTotalPrice";
-            this.txtTotalPrice.ReadOnly = true;
-            this.txtTotalPrice.Size = new System.Drawing.Size(92, 25);
-            this.txtTotalPrice.TabIndex = 2;
-            this.txtTotalPrice.Text = "$1,694.99";
-            this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // tblTotalPrice
-            // 
-            this.tblTotalPrice.ColumnCount = 2;
-            this.tblTotalPrice.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.94382F));
-            this.tblTotalPrice.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.05618F));
-            this.tblTotalPrice.Controls.Add(this.lblTotalPrice, 0, 0);
-            this.tblTotalPrice.Controls.Add(this.txtTotalPrice, 1, 0);
-            this.tblTotalPrice.Location = new System.Drawing.Point(6, 160);
-            this.tblTotalPrice.Name = "tblTotalPrice";
-            this.tblTotalPrice.RowCount = 1;
-            this.tblTotalPrice.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
-            this.tblTotalPrice.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tblTotalPrice.Size = new System.Drawing.Size(178, 40);
-            this.tblTotalPrice.TabIndex = 1;
-            // 
             // shapeContainer2
             // 
             this.shapeContainer2.Location = new System.Drawing.Point(3, 24);
@@ -746,16 +760,16 @@
             this.mnuOrder.ResumeLayout(false);
             this.mnuOrder.PerformLayout();
             this.grpSystemComponents.ResumeLayout(false);
+            this.tblComponentsSubII.ResumeLayout(false);
+            this.tblComponentsSubII.PerformLayout();
             this.tblComponentsSubI.ResumeLayout(false);
             this.tblComponentsSubI.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tblComponentsSubII.ResumeLayout(false);
-            this.tblComponentsSubII.PerformLayout();
             this.grpYourPrice.ResumeLayout(false);
-            this.tblPrices.ResumeLayout(false);
-            this.tblPrices.PerformLayout();
             this.tblTotalPrice.ResumeLayout(false);
             this.tblTotalPrice.PerformLayout();
+            this.tblPrices.ResumeLayout(false);
+            this.tblPrices.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

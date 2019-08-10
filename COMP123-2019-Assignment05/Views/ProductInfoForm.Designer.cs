@@ -73,10 +73,10 @@
             this.lblClickNextConfirm = new System.Windows.Forms.Label();
             this.btnSelectAnotherProduct = new System.Windows.Forms.Button();
             this.tblProductInformationSubII = new System.Windows.Forms.TableLayoutPanel();
+            this.lblManufacturer = new System.Windows.Forms.Label();
             this.lblModel = new System.Windows.Forms.Label();
             this.txtManufacturer = new System.Windows.Forms.TextBox();
             this.txtModel = new System.Windows.Forms.TextBox();
-            this.lblManufacturer = new System.Windows.Forms.Label();
             this.mnuProductInfoForm.SuspendLayout();
             this.tblProductId.SuspendLayout();
             this.grpProductInfo.SuspendLayout();
@@ -224,6 +224,7 @@
             this.txtProductId.ReadOnly = true;
             this.txtProductId.Size = new System.Drawing.Size(132, 25);
             this.txtProductId.TabIndex = 1;
+            this.txtProductId.TabStop = false;
             // 
             // txtCondition
             // 
@@ -234,6 +235,7 @@
             this.txtCondition.ReadOnly = true;
             this.txtCondition.Size = new System.Drawing.Size(132, 25);
             this.txtCondition.TabIndex = 1;
+            this.txtCondition.TabStop = false;
             // 
             // txtCost
             // 
@@ -244,6 +246,7 @@
             this.txtCost.ReadOnly = true;
             this.txtCost.Size = new System.Drawing.Size(137, 25);
             this.txtCost.TabIndex = 1;
+            this.txtCost.TabStop = false;
             // 
             // grpProductInfo
             // 
@@ -306,6 +309,7 @@
             this.txtPlatform.ReadOnly = true;
             this.txtPlatform.Size = new System.Drawing.Size(132, 25);
             this.txtPlatform.TabIndex = 1;
+            this.txtPlatform.TabStop = false;
             // 
             // txtOperatingSystem
             // 
@@ -316,6 +320,7 @@
             this.txtOperatingSystem.ReadOnly = true;
             this.txtOperatingSystem.Size = new System.Drawing.Size(388, 25);
             this.txtOperatingSystem.TabIndex = 1;
+            this.txtOperatingSystem.TabStop = false;
             this.txtOperatingSystem.Text = "Windows 12";
             // 
             // grpTechnicalSpecifications
@@ -383,6 +388,7 @@
             this.txtCpuBrand.ReadOnly = true;
             this.txtCpuBrand.Size = new System.Drawing.Size(132, 25);
             this.txtCpuBrand.TabIndex = 1;
+            this.txtCpuBrand.TabStop = false;
             // 
             // lblGpuType
             // 
@@ -404,6 +410,7 @@
             this.txtGpuType.ReadOnly = true;
             this.txtGpuType.Size = new System.Drawing.Size(137, 25);
             this.txtGpuType.TabIndex = 1;
+            this.txtGpuType.TabStop = false;
             // 
             // txtCpuNumber
             // 
@@ -414,6 +421,7 @@
             this.txtCpuNumber.ReadOnly = true;
             this.txtCpuNumber.Size = new System.Drawing.Size(132, 25);
             this.txtCpuNumber.TabIndex = 1;
+            this.txtCpuNumber.TabStop = false;
             // 
             // tblTechnicalSpecificationsSubIII
             // 
@@ -468,6 +476,7 @@
             this.txtCpuType.ReadOnly = true;
             this.txtCpuType.Size = new System.Drawing.Size(132, 25);
             this.txtCpuType.TabIndex = 1;
+            this.txtCpuType.TabStop = false;
             // 
             // lblWebcam
             // 
@@ -489,6 +498,7 @@
             this.txtWebcam.ReadOnly = true;
             this.txtWebcam.Size = new System.Drawing.Size(137, 25);
             this.txtWebcam.TabIndex = 1;
+            this.txtWebcam.TabStop = false;
             // 
             // txtCpuSpeed
             // 
@@ -499,6 +509,7 @@
             this.txtCpuSpeed.ReadOnly = true;
             this.txtCpuSpeed.Size = new System.Drawing.Size(132, 25);
             this.txtCpuSpeed.TabIndex = 1;
+            this.txtCpuSpeed.TabStop = false;
             // 
             // tblTechnicalSpecificationsSubI
             // 
@@ -553,6 +564,7 @@
             this.txtMemory.ReadOnly = true;
             this.txtMemory.Size = new System.Drawing.Size(132, 25);
             this.txtMemory.TabIndex = 1;
+            this.txtMemory.TabStop = false;
             // 
             // lblHddSize
             // 
@@ -574,6 +586,7 @@
             this.txtHddSize.ReadOnly = true;
             this.txtHddSize.Size = new System.Drawing.Size(137, 25);
             this.txtHddSize.TabIndex = 1;
+            this.txtHddSize.TabStop = false;
             // 
             // txtLcdSize
             // 
@@ -584,6 +597,7 @@
             this.txtLcdSize.ReadOnly = true;
             this.txtLcdSize.Size = new System.Drawing.Size(132, 25);
             this.txtLcdSize.TabIndex = 1;
+            this.txtLcdSize.TabStop = false;
             // 
             // btnCancel
             // 
@@ -612,7 +626,7 @@
             this.lblClickNextConfirm.Name = "lblClickNextConfirm";
             this.lblClickNextConfirm.Size = new System.Drawing.Size(258, 21);
             this.lblClickNextConfirm.TabIndex = 5;
-            this.lblClickNextConfirm.Text = "Click Next to Confirm Your Selection";
+            this.lblClickNextConfirm.Text = "Click next to confirm your selection.";
             // 
             // btnSelectAnotherProduct
             // 
@@ -644,6 +658,17 @@
             this.tblProductInformationSubII.Size = new System.Drawing.Size(758, 46);
             this.tblProductInformationSubII.TabIndex = 1;
             // 
+            // lblManufacturer
+            // 
+            this.lblManufacturer.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblManufacturer.AutoSize = true;
+            this.lblManufacturer.Location = new System.Drawing.Point(4, 12);
+            this.lblManufacturer.Name = "lblManufacturer";
+            this.lblManufacturer.Size = new System.Drawing.Size(106, 21);
+            this.lblManufacturer.TabIndex = 0;
+            this.lblManufacturer.Text = "Manufacturer";
+            this.lblManufacturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // lblModel
             // 
             this.lblModel.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -664,6 +689,7 @@
             this.txtManufacturer.ReadOnly = true;
             this.txtManufacturer.Size = new System.Drawing.Size(132, 25);
             this.txtManufacturer.TabIndex = 1;
+            this.txtManufacturer.TabStop = false;
             // 
             // txtModel
             // 
@@ -674,17 +700,7 @@
             this.txtModel.ReadOnly = true;
             this.txtModel.Size = new System.Drawing.Size(388, 25);
             this.txtModel.TabIndex = 1;
-            // 
-            // lblManufacturer
-            // 
-            this.lblManufacturer.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lblManufacturer.AutoSize = true;
-            this.lblManufacturer.Location = new System.Drawing.Point(4, 12);
-            this.lblManufacturer.Name = "lblManufacturer";
-            this.lblManufacturer.Size = new System.Drawing.Size(106, 21);
-            this.lblManufacturer.TabIndex = 0;
-            this.lblManufacturer.Text = "Manufacturer";
-            this.lblManufacturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtModel.TabStop = false;
             // 
             // ProductInfoForm
             // 

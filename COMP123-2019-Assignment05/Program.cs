@@ -1,5 +1,5 @@
 ﻿using COMP123_2019_Assignment05.Forms;
-//using COMP123_2019_Assignment05.Models;
+using COMP123_2019_Assignment05.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +28,7 @@ namespace COMP123_2019_Assignment05 {
         public static AboutForm aboutForm;
 
         // Models
-        //public static Product product;
+        public static Product product;
 
         /// <summary>
         /// The main entry point for the application.
@@ -47,7 +47,7 @@ namespace COMP123_2019_Assignment05 {
             aboutForm = new AboutForm();
 
             // Instantiate Products
-            // product = new Product();
+            product = new Product();
             
             Application.Run(splashScreen);
         }
