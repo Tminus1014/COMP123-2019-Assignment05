@@ -59,14 +59,14 @@
             this.txtWebcam = new System.Windows.Forms.TextBox();
             this.txtOperatingSystem = new System.Windows.Forms.TextBox();
             this.tblComponentsSubI = new System.Windows.Forms.TableLayoutPanel();
-            this.txtPlatform = new System.Windows.Forms.TextBox();
+            this.txtCondition = new System.Windows.Forms.TextBox();
             this.lblManufacturer = new System.Windows.Forms.Label();
             this.lblCondition = new System.Windows.Forms.Label();
             this.lblModel = new System.Windows.Forms.Label();
             this.lblPlatform = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtManufacturer = new System.Windows.Forms.TextBox();
+            this.txtPlatform = new System.Windows.Forms.TextBox();
+            this.txtModel = new System.Windows.Forms.TextBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -77,7 +77,7 @@
             this.tblPrices = new System.Windows.Forms.TableLayoutPanel();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblSalesTax = new System.Windows.Forms.Label();
-            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtCost = new System.Windows.Forms.TextBox();
             this.txtSalesTax = new System.Windows.Forms.TextBox();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -349,11 +349,11 @@
             // 
             this.lblWebcam.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblWebcam.AutoSize = true;
-            this.lblWebcam.Location = new System.Drawing.Point(40, 261);
+            this.lblWebcam.Location = new System.Drawing.Point(46, 261);
             this.lblWebcam.Name = "lblWebcam";
-            this.lblWebcam.Size = new System.Drawing.Size(76, 21);
+            this.lblWebcam.Size = new System.Drawing.Size(70, 21);
             this.lblWebcam.TabIndex = 2;
-            this.lblWebcam.Text = "Web Cam";
+            this.lblWebcam.Text = "Webcam";
             this.lblWebcam.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblOperatingSystem
@@ -473,14 +473,14 @@
             this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.83968F));
             this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.15974F));
             this.tblComponentsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.83968F));
-            this.tblComponentsSubI.Controls.Add(this.txtPlatform, 1, 0);
+            this.tblComponentsSubI.Controls.Add(this.txtCondition, 1, 0);
             this.tblComponentsSubI.Controls.Add(this.lblManufacturer, 0, 1);
             this.tblComponentsSubI.Controls.Add(this.lblCondition, 0, 0);
             this.tblComponentsSubI.Controls.Add(this.lblModel, 2, 1);
             this.tblComponentsSubI.Controls.Add(this.lblPlatform, 2, 0);
-            this.tblComponentsSubI.Controls.Add(this.textBox1, 1, 1);
-            this.tblComponentsSubI.Controls.Add(this.textBox2, 3, 0);
-            this.tblComponentsSubI.Controls.Add(this.textBox3, 3, 1);
+            this.tblComponentsSubI.Controls.Add(this.txtManufacturer, 1, 1);
+            this.tblComponentsSubI.Controls.Add(this.txtPlatform, 3, 0);
+            this.tblComponentsSubI.Controls.Add(this.txtModel, 3, 1);
             this.tblComponentsSubI.Location = new System.Drawing.Point(9, 24);
             this.tblComponentsSubI.Name = "tblComponentsSubI";
             this.tblComponentsSubI.RowCount = 2;
@@ -489,16 +489,16 @@
             this.tblComponentsSubI.Size = new System.Drawing.Size(546, 82);
             this.tblComponentsSubI.TabIndex = 1;
             // 
-            // txtPlatform
+            // txtCondition
             // 
-            this.txtPlatform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPlatform.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlatform.Location = new System.Drawing.Point(123, 8);
-            this.txtPlatform.Name = "txtPlatform";
-            this.txtPlatform.ReadOnly = true;
-            this.txtPlatform.Size = new System.Drawing.Size(146, 25);
-            this.txtPlatform.TabIndex = 2;
-            this.txtPlatform.TabStop = false;
+            this.txtCondition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCondition.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCondition.Location = new System.Drawing.Point(123, 8);
+            this.txtCondition.Name = "txtCondition";
+            this.txtCondition.ReadOnly = true;
+            this.txtCondition.Size = new System.Drawing.Size(146, 25);
+            this.txtCondition.TabIndex = 2;
+            this.txtCondition.TabStop = false;
             // 
             // lblManufacturer
             // 
@@ -544,38 +544,38 @@
             this.lblPlatform.Text = "Platform";
             this.lblPlatform.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // txtManufacturer
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(123, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(146, 25);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TabStop = false;
+            this.txtManufacturer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtManufacturer.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtManufacturer.Location = new System.Drawing.Point(123, 49);
+            this.txtManufacturer.Name = "txtManufacturer";
+            this.txtManufacturer.ReadOnly = true;
+            this.txtManufacturer.Size = new System.Drawing.Size(146, 25);
+            this.txtManufacturer.TabIndex = 2;
+            this.txtManufacturer.TabStop = false;
             // 
-            // textBox2
+            // txtPlatform
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(395, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(148, 25);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TabStop = false;
+            this.txtPlatform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPlatform.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlatform.Location = new System.Drawing.Point(395, 8);
+            this.txtPlatform.Name = "txtPlatform";
+            this.txtPlatform.ReadOnly = true;
+            this.txtPlatform.Size = new System.Drawing.Size(148, 25);
+            this.txtPlatform.TabIndex = 2;
+            this.txtPlatform.TabStop = false;
             // 
-            // textBox3
+            // txtModel
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(395, 49);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(148, 25);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.TabStop = false;
+            this.txtModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtModel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModel.Location = new System.Drawing.Point(395, 49);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.ReadOnly = true;
+            this.txtModel.Size = new System.Drawing.Size(148, 25);
+            this.txtModel.TabIndex = 2;
+            this.txtModel.TabStop = false;
             // 
             // shapeContainer1
             // 
@@ -662,7 +662,7 @@
             this.tblPrices.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.05618F));
             this.tblPrices.Controls.Add(this.lblPrice, 0, 0);
             this.tblPrices.Controls.Add(this.lblSalesTax, 0, 1);
-            this.tblPrices.Controls.Add(this.txtPrice, 1, 0);
+            this.tblPrices.Controls.Add(this.txtCost, 1, 0);
             this.tblPrices.Controls.Add(this.txtSalesTax, 1, 1);
             this.tblPrices.Location = new System.Drawing.Point(6, 27);
             this.tblPrices.Name = "tblPrices";
@@ -694,17 +694,17 @@
             this.lblSalesTax.Text = "Sales Tax (13%)";
             this.lblSalesTax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtPrice
+            // txtCost
             // 
-            this.txtPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrice.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(83, 9);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.ReadOnly = true;
-            this.txtPrice.Size = new System.Drawing.Size(92, 25);
-            this.txtPrice.TabIndex = 2;
-            this.txtPrice.Text = "$1,499.99";
-            this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCost.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCost.Location = new System.Drawing.Point(83, 9);
+            this.txtCost.Name = "txtCost";
+            this.txtCost.ReadOnly = true;
+            this.txtCost.Size = new System.Drawing.Size(92, 25);
+            this.txtCost.TabIndex = 2;
+            this.txtCost.Text = "$1,499.99";
+            this.txtCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSalesTax
             // 
@@ -757,6 +757,7 @@
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Complete Your Order - Dollar Computers";
+            this.Activated += new System.EventHandler(this.OrderForm_Activated);
             this.mnuOrder.ResumeLayout(false);
             this.mnuOrder.PerformLayout();
             this.grpSystemComponents.ResumeLayout(false);
@@ -798,10 +799,10 @@
         private System.Windows.Forms.Label lblCondition;
         private System.Windows.Forms.Label lblModel;
         private System.Windows.Forms.Label lblPlatform;
+        private System.Windows.Forms.TextBox txtCondition;
+        private System.Windows.Forms.TextBox txtManufacturer;
         private System.Windows.Forms.TextBox txtPlatform;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtModel;
         private System.Windows.Forms.TableLayoutPanel tblComponentsSubII;
         private System.Windows.Forms.Label lblLcdSize;
         private System.Windows.Forms.Label lblMemory;
@@ -830,7 +831,7 @@
         private System.Windows.Forms.TableLayoutPanel tblPrices;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblSalesTax;
-        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtCost;
         private System.Windows.Forms.TextBox txtSalesTax;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;

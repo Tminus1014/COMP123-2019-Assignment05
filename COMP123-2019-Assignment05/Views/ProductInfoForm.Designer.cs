@@ -32,7 +32,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectAnotherProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tblProductId = new System.Windows.Forms.TableLayoutPanel();
             this.lblProductId = new System.Windows.Forms.Label();
             this.lblCondition = new System.Windows.Forms.Label();
@@ -149,16 +149,17 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.selectAllToolStripMenuItem});
+            this.selectAnotherProductToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(48, 23);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
-            // selectAllToolStripMenuItem
+            // selectAnotherProductToolStripMenuItem
             // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
-            this.selectAllToolStripMenuItem.Text = "Se&lect Another Product";
+            this.selectAnotherProductToolStripMenuItem.Name = "selectAnotherProductToolStripMenuItem";
+            this.selectAnotherProductToolStripMenuItem.Size = new System.Drawing.Size(239, 26);
+            this.selectAnotherProductToolStripMenuItem.Text = "Se&lect Another Product";
+            this.selectAnotherProductToolStripMenuItem.Click += new System.EventHandler(this.SelectAnotherProduct_Click);
             // 
             // tblProductId
             // 
@@ -636,7 +637,7 @@
             this.btnSelectAnotherProduct.TabIndex = 6;
             this.btnSelectAnotherProduct.Text = "Select Another Product";
             this.btnSelectAnotherProduct.UseVisualStyleBackColor = true;
-            this.btnSelectAnotherProduct.Click += new System.EventHandler(this.BtnSelectAnotherProduct_Click);
+            this.btnSelectAnotherProduct.Click += new System.EventHandler(this.SelectAnotherProduct_Click);
             // 
             // tblProductInformationSubII
             // 
@@ -724,6 +725,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Product Information - Dollar Computers";
+            this.Activated += new System.EventHandler(this.ProductInfoForm_Load);
             this.mnuProductInfoForm.ResumeLayout(false);
             this.mnuProductInfoForm.PerformLayout();
             this.tblProductId.ResumeLayout(false);
@@ -755,7 +757,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selectAnotherProductToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel tblProductId;
         private System.Windows.Forms.Label lblProductId;
         private System.Windows.Forms.GroupBox grpProductInfo;

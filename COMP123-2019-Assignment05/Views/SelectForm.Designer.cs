@@ -26,13 +26,6 @@
             this.components = new System.ComponentModel.Container();
             this.lblListofComputers = new System.Windows.Forms.Label();
             this.datDollarComputersList = new System.Windows.Forms.DataGridView();
-            this.lblSelectedComputer = new System.Windows.Forms.Label();
-            this.txtSelectedComputer = new System.Windows.Forms.TextBox();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.dollarComputersDataSet = new COMP123_2019_Assignment05.DollarComputersDataSet();
-            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsTableAdapter = new COMP123_2019_Assignment05.DollarComputersDataSetTableAdapters.productsTableAdapter();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,9 +57,16 @@
             this.mousttypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.webcamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dollarComputersDataSet = new COMP123_2019_Assignment05.DollarComputersDataSet();
+            this.lblSelectedComputer = new System.Windows.Forms.Label();
+            this.txtSelectedComputer = new System.Windows.Forms.TextBox();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.productsTableAdapter = new COMP123_2019_Assignment05.DollarComputersDataSetTableAdapters.productsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.datDollarComputersList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // lblListofComputers
@@ -130,60 +130,7 @@
             this.datDollarComputersList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datDollarComputersList.Size = new System.Drawing.Size(751, 436);
             this.datDollarComputersList.TabIndex = 1;
-            // 
-            // lblSelectedComputer
-            // 
-            this.lblSelectedComputer.AutoSize = true;
-            this.lblSelectedComputer.Location = new System.Drawing.Point(15, 504);
-            this.lblSelectedComputer.Name = "lblSelectedComputer";
-            this.lblSelectedComputer.Size = new System.Drawing.Size(147, 21);
-            this.lblSelectedComputer.TabIndex = 2;
-            this.lblSelectedComputer.Text = "Selected Computer:";
-            // 
-            // txtSelectedComputer
-            // 
-            this.txtSelectedComputer.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSelectedComputer.Location = new System.Drawing.Point(168, 501);
-            this.txtSelectedComputer.Name = "txtSelectedComputer";
-            this.txtSelectedComputer.ReadOnly = true;
-            this.txtSelectedComputer.Size = new System.Drawing.Size(387, 27);
-            this.txtSelectedComputer.TabIndex = 3;
-            this.txtSelectedComputer.Text = "Selected Computer";
-            this.txtSelectedComputer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnNext
-            // 
-            this.btnNext.Location = new System.Drawing.Point(678, 501);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(92, 40);
-            this.btnNext.TabIndex = 4;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.BtnNext_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(580, 501);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(92, 40);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
-            // 
-            // dollarComputersDataSet
-            // 
-            this.dollarComputersDataSet.DataSetName = "DollarComputersDataSet";
-            this.dollarComputersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataMember = "products";
-            this.productsBindingSource.DataSource = this.dollarComputersDataSet;
-            // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
+            this.datDollarComputersList.SelectionChanged += new System.EventHandler(this.DatDollarComputersList_SelectionChanged);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -193,7 +140,7 @@
             this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
             this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
             this.productIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.productIDDataGridViewTextBoxColumn.Width = 89;
+            this.productIDDataGridViewTextBoxColumn.Width = 80;
             // 
             // costDataGridViewTextBoxColumn
             // 
@@ -233,7 +180,7 @@
             this.rAMtypeDataGridViewTextBoxColumn.Name = "rAMtypeDataGridViewTextBoxColumn";
             this.rAMtypeDataGridViewTextBoxColumn.ReadOnly = true;
             this.rAMtypeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.rAMtypeDataGridViewTextBoxColumn.Width = 86;
+            this.rAMtypeDataGridViewTextBoxColumn.Width = 77;
             // 
             // rAMsizeDataGridViewTextBoxColumn
             // 
@@ -243,7 +190,7 @@
             this.rAMsizeDataGridViewTextBoxColumn.Name = "rAMsizeDataGridViewTextBoxColumn";
             this.rAMsizeDataGridViewTextBoxColumn.ReadOnly = true;
             this.rAMsizeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.rAMsizeDataGridViewTextBoxColumn.Width = 81;
+            this.rAMsizeDataGridViewTextBoxColumn.Width = 73;
             // 
             // displaytypeDataGridViewTextBoxColumn
             // 
@@ -253,7 +200,7 @@
             this.displaytypeDataGridViewTextBoxColumn.Name = "displaytypeDataGridViewTextBoxColumn";
             this.displaytypeDataGridViewTextBoxColumn.ReadOnly = true;
             this.displaytypeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.displaytypeDataGridViewTextBoxColumn.Width = 102;
+            this.displaytypeDataGridViewTextBoxColumn.Width = 92;
             // 
             // screensizeDataGridViewTextBoxColumn
             // 
@@ -263,7 +210,7 @@
             this.screensizeDataGridViewTextBoxColumn.Name = "screensizeDataGridViewTextBoxColumn";
             this.screensizeDataGridViewTextBoxColumn.ReadOnly = true;
             this.screensizeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.screensizeDataGridViewTextBoxColumn.Width = 93;
+            this.screensizeDataGridViewTextBoxColumn.Width = 84;
             // 
             // resolutionDataGridViewTextBoxColumn
             // 
@@ -283,7 +230,7 @@
             this.cPUClassDataGridViewTextBoxColumn.Name = "cPUClassDataGridViewTextBoxColumn";
             this.cPUClassDataGridViewTextBoxColumn.ReadOnly = true;
             this.cPUClassDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cPUClassDataGridViewTextBoxColumn.Width = 84;
+            this.cPUClassDataGridViewTextBoxColumn.Width = 76;
             // 
             // cPUbrandDataGridViewTextBoxColumn
             // 
@@ -293,7 +240,7 @@
             this.cPUbrandDataGridViewTextBoxColumn.Name = "cPUbrandDataGridViewTextBoxColumn";
             this.cPUbrandDataGridViewTextBoxColumn.ReadOnly = true;
             this.cPUbrandDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cPUbrandDataGridViewTextBoxColumn.Width = 90;
+            this.cPUbrandDataGridViewTextBoxColumn.Width = 81;
             // 
             // cPUtypeDataGridViewTextBoxColumn
             // 
@@ -303,7 +250,7 @@
             this.cPUtypeDataGridViewTextBoxColumn.Name = "cPUtypeDataGridViewTextBoxColumn";
             this.cPUtypeDataGridViewTextBoxColumn.ReadOnly = true;
             this.cPUtypeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cPUtypeDataGridViewTextBoxColumn.Width = 81;
+            this.cPUtypeDataGridViewTextBoxColumn.Width = 73;
             // 
             // cPUspeedDataGridViewTextBoxColumn
             // 
@@ -313,7 +260,7 @@
             this.cPUspeedDataGridViewTextBoxColumn.Name = "cPUspeedDataGridViewTextBoxColumn";
             this.cPUspeedDataGridViewTextBoxColumn.ReadOnly = true;
             this.cPUspeedDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cPUspeedDataGridViewTextBoxColumn.Width = 91;
+            this.cPUspeedDataGridViewTextBoxColumn.Width = 82;
             // 
             // cPUnumberDataGridViewTextBoxColumn
             // 
@@ -323,7 +270,7 @@
             this.cPUnumberDataGridViewTextBoxColumn.Name = "cPUnumberDataGridViewTextBoxColumn";
             this.cPUnumberDataGridViewTextBoxColumn.ReadOnly = true;
             this.cPUnumberDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cPUnumberDataGridViewTextBoxColumn.Width = 106;
+            this.cPUnumberDataGridViewTextBoxColumn.Width = 95;
             // 
             // conditionDataGridViewTextBoxColumn
             // 
@@ -494,6 +441,60 @@
             this.webcamDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.webcamDataGridViewTextBoxColumn.Width = 76;
             // 
+            // productsBindingSource
+            // 
+            this.productsBindingSource.DataMember = "products";
+            this.productsBindingSource.DataSource = this.dollarComputersDataSet;
+            // 
+            // dollarComputersDataSet
+            // 
+            this.dollarComputersDataSet.DataSetName = "DollarComputersDataSet";
+            this.dollarComputersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lblSelectedComputer
+            // 
+            this.lblSelectedComputer.AutoSize = true;
+            this.lblSelectedComputer.Location = new System.Drawing.Point(15, 504);
+            this.lblSelectedComputer.Name = "lblSelectedComputer";
+            this.lblSelectedComputer.Size = new System.Drawing.Size(147, 21);
+            this.lblSelectedComputer.TabIndex = 2;
+            this.lblSelectedComputer.Text = "Selected Computer:";
+            // 
+            // txtSelectedComputer
+            // 
+            this.txtSelectedComputer.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSelectedComputer.Location = new System.Drawing.Point(168, 501);
+            this.txtSelectedComputer.Name = "txtSelectedComputer";
+            this.txtSelectedComputer.ReadOnly = true;
+            this.txtSelectedComputer.Size = new System.Drawing.Size(387, 27);
+            this.txtSelectedComputer.TabIndex = 3;
+            this.txtSelectedComputer.Text = "Selected Computer";
+            this.txtSelectedComputer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(678, 501);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(92, 40);
+            this.btnNext.TabIndex = 4;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.BtnNext_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(580, 501);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(92, 40);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
+            // 
+            // productsTableAdapter
+            // 
+            this.productsTableAdapter.ClearBeforeFill = true;
+            // 
             // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -514,8 +515,8 @@
             this.Text = "Select Your Computer - Dollar Computers";
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datDollarComputersList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
