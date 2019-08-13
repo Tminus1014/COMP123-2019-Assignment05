@@ -120,18 +120,18 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(165, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(221, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -145,8 +145,9 @@
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(122, 26);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.backToolStripMenuItem.Text = "&Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -652,7 +653,7 @@
             this.txtTotalPrice.ReadOnly = true;
             this.txtTotalPrice.Size = new System.Drawing.Size(92, 25);
             this.txtTotalPrice.TabIndex = 2;
-            this.txtTotalPrice.Text = "$1,694.99";
+            this.txtTotalPrice.Text = "$0.00";
             this.txtTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tblPrices
@@ -703,7 +704,7 @@
             this.txtCost.ReadOnly = true;
             this.txtCost.Size = new System.Drawing.Size(92, 25);
             this.txtCost.TabIndex = 2;
-            this.txtCost.Text = "$1,499.99";
+            this.txtCost.Text = "$0.00";
             this.txtCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtSalesTax
@@ -715,7 +716,7 @@
             this.txtSalesTax.ReadOnly = true;
             this.txtSalesTax.Size = new System.Drawing.Size(92, 25);
             this.txtSalesTax.TabIndex = 2;
-            this.txtSalesTax.Text = "$195.00";
+            this.txtSalesTax.Text = "$0.00";
             this.txtSalesTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // shapeContainer2

@@ -15,6 +15,9 @@ using System.Windows.Forms;
 /// 
 /// Revision History:
 ///  * 2019-08-02: Basic UI completed
+///  * 2019-08-10: Connected the Products table from the DollarComputers database
+///  * 2019-08-11: Added the ability for the ProductInfoForm and OrderForm forms to display 
+///                product information based on the computer selected in the SelectForm
 /// 
 /// </summary>
 namespace COMP123_2019_Assignment05 {

@@ -46,7 +46,7 @@
             this.btnStartOrder.Location = new System.Drawing.Point(55, 295);
             this.btnStartOrder.Name = "btnStartOrder";
             this.btnStartOrder.Size = new System.Drawing.Size(162, 40);
-            this.btnStartOrder.TabIndex = 1;
+            this.btnStartOrder.TabIndex = 0;
             this.btnStartOrder.Text = "Start New Order";
             this.btnStartOrder.UseVisualStyleBackColor = true;
             this.btnStartOrder.Click += new System.EventHandler(this.BtnStartOrder_Click);
@@ -59,6 +59,7 @@
             this.btnLoadOrder.TabIndex = 1;
             this.btnLoadOrder.Text = "Load Saved Order";
             this.btnLoadOrder.UseVisualStyleBackColor = true;
+            this.btnLoadOrder.Click += new System.EventHandler(this.BtnLoadOrder_Click);
             // 
             // btnExit
             // 

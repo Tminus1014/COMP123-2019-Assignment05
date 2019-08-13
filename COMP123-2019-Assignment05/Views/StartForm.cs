@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,17 @@ namespace COMP123_2019_Assignment05.Forms {
         private void BtnStartOrder_Click(object sender, EventArgs e) {
             Program.startForm.Hide();
             Program.selectForm.Show();
+        }
+        private void BtnLoadOrder_Click(object sender, EventArgs e) {
+            Program.productInfoForm.openProductOrder();
+
+            // Trying to open OpenOrder form without actually selecting a product will cause the program to crash
+            // because the method to calculate and display total price will be executed. Checking if cost has a 
+            // value will determine whether the productInfoForm will be shown.
+            if (Program.product.cost.HasValue) {
+                Program.startForm.Hide();
+                Program.productInfoForm.Show();
+            }
         }
 
         /// <summary>

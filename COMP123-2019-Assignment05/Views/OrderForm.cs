@@ -20,7 +20,7 @@ namespace COMP123_2019_Assignment05.Forms {
 
         private void OrderForm_Activated(object sender, EventArgs e) {
             DisplayProductInformation();
-            CalculateTotalCost();
+            CalculateTotalCost((double) Program.product.cost);
         }
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e) {
@@ -67,8 +67,16 @@ namespace COMP123_2019_Assignment05.Forms {
             txtWebcam.Text = $"{Program.product.webcam}";
         }
 
-        private void CalculateTotalCost() {
+        private void CalculateTotalCost(double basePrice) {
+            const double salesTax = 0.13;
+            double salesTaxPrice = basePrice * salesTax;
+            double totalPrice = basePrice + salesTaxPrice;
+            DisplayPrices(salesTaxPrice, totalPrice);
+        }
 
+        private void DisplayPrices(double salesTaxPrice, double totalPrice) {
+            txtSalesTax.Text = $"{salesTaxPrice:C}";
+            txtTotalPrice.Text = $"{totalPrice:C}";
         }
     }
 }
