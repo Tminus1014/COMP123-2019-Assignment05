@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Views\images\icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -156,6 +159,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="Views\images\computer-1583432_640.jpg" />
+    <Content Include="Views\images\dollarcomputers-bg1-250x250.png" />
+    <Content Include="Views\images\dollarcomputers-bg1.png" />
+    <Content Include="Views\images\dollarcomputers-bg2.png" />
+    <Content Include="Views\images\dollarcomputers-splash.png" />
+    <Content Include="Views\images\dollarcomputers-tr.png" />
+    <Content Include="Views\images\flat-2126880_1280.png" />
+    <Content Include="Views\images\icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

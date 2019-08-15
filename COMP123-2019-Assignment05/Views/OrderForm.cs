@@ -41,6 +41,10 @@ namespace COMP123_2019_Assignment05.Forms {
             Application.Exit();
         }
 
+        private void PrintToolStripMenuItem_Click(object sender, EventArgs e) {
+            printOrder();
+        }
+
         /* ------------- */
         /* -= Methods =- */
         /* ------------- */
@@ -77,6 +81,10 @@ namespace COMP123_2019_Assignment05.Forms {
         private void DisplayPrices(double salesTaxPrice, double totalPrice) {
             txtSalesTax.Text = $"{salesTaxPrice:C}";
             txtTotalPrice.Text = $"{totalPrice:C}";
+        }
+
+        private void printOrder() {
+            MessageBox.Show("Printing your order...", "Printing");
         }
     }
 }
