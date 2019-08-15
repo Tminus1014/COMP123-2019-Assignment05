@@ -41,6 +41,10 @@ namespace COMP123_2019_Assignment05.Forms {
             Application.Exit();
         }
 
+        private void PrintToolStripMenuItem_Click(object sender, EventArgs e) {
+            printOrder();
+        }
+
         /* ------------- */
         /* -= Methods =- */
         /* ------------- */
@@ -48,6 +52,37 @@ namespace COMP123_2019_Assignment05.Forms {
         private void DisplayProductInformation() {
             txtCondition.Text = $"{Program.product.condition}";
             txtCost.Text = $"{Program.product.cost:C}";
+
+            // Product Icon
+            switch (Program.product.manufacturer) {
+                case "Acer":
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/acer.png");
+                    break;
+                case "Apple":
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/apple.jpg");
+                    break;
+                case "Asus":
+                    picProductIcon.Image = Properties.Resources.asus;
+                    break;
+                case "CybertonPC":
+                    picProductIcon.Image = Properties.Resources.cybertron;
+                    break;
+                case "Gateway":
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/gateway.png");
+                    break;
+                case "HP":
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/hp.jpg");
+                    break;
+                case "iBUYPOWER":
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/ibuypower.png");
+                    break;
+                case "Lenovo":
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/lenovo.jpg");
+                    break;
+                case "Toshiba":
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/toshiba.jpg");
+                    break;
+            }
 
             // Product Information
             txtPlatform.Text = $"{Program.product.platform}";
@@ -77,6 +112,10 @@ namespace COMP123_2019_Assignment05.Forms {
         private void DisplayPrices(double salesTaxPrice, double totalPrice) {
             txtSalesTax.Text = $"{salesTaxPrice:C}";
             txtTotalPrice.Text = $"{totalPrice:C}";
+        }
+
+        private void printOrder() {
+            MessageBox.Show("Printing your order...", "Printing");
         }
     }
 }

@@ -92,13 +92,14 @@
             // 
             // mnuProductInfoForm
             // 
+            this.mnuProductInfoForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.mnuProductInfoForm.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnuProductInfoForm.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem});
             this.mnuProductInfoForm.Location = new System.Drawing.Point(0, 0);
             this.mnuProductInfoForm.Name = "mnuProductInfoForm";
-            this.mnuProductInfoForm.Size = new System.Drawing.Size(782, 28);
+            this.mnuProductInfoForm.Size = new System.Drawing.Size(782, 27);
             this.mnuProductInfoForm.TabIndex = 0;
             this.mnuProductInfoForm.Text = "menuStrip1";
             // 
@@ -110,8 +111,9 @@
             this.saveToolStripMenuItem,
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(47, 23);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // openToolStripMenuItem
@@ -126,6 +128,7 @@
             // 
             // toolStripSeparator
             // 
+            this.toolStripSeparator.ForeColor = System.Drawing.SystemColors.ControlText;
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(221, 6);
             // 
@@ -149,13 +152,15 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.selectAnotherProductToolStripMenuItem});
+            this.editToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(48, 23);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // selectAnotherProductToolStripMenuItem
@@ -180,18 +185,19 @@
             this.tblProductId.Controls.Add(this.txtProductId, 1, 0);
             this.tblProductId.Controls.Add(this.txtCondition, 3, 0);
             this.tblProductId.Controls.Add(this.txtCost, 5, 0);
-            this.tblProductId.Location = new System.Drawing.Point(12, 30);
+            this.tblProductId.Location = new System.Drawing.Point(18, 30);
             this.tblProductId.Name = "tblProductId";
             this.tblProductId.RowCount = 1;
             this.tblProductId.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblProductId.Size = new System.Drawing.Size(758, 46);
+            this.tblProductId.Size = new System.Drawing.Size(749, 46);
             this.tblProductId.TabIndex = 1;
             // 
             // lblProductId
             // 
             this.lblProductId.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblProductId.AutoSize = true;
-            this.lblProductId.Location = new System.Drawing.Point(27, 12);
+            this.lblProductId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblProductId.Location = new System.Drawing.Point(26, 12);
             this.lblProductId.Name = "lblProductId";
             this.lblProductId.Size = new System.Drawing.Size(83, 21);
             this.lblProductId.TabIndex = 0;
@@ -202,7 +208,8 @@
             // 
             this.lblCondition.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCondition.AutoSize = true;
-            this.lblCondition.Location = new System.Drawing.Point(284, 12);
+            this.lblCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblCondition.Location = new System.Drawing.Point(281, 12);
             this.lblCondition.Name = "lblCondition";
             this.lblCondition.Size = new System.Drawing.Size(77, 21);
             this.lblCondition.TabIndex = 0;
@@ -213,7 +220,7 @@
             // 
             this.lblCost.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCost.AutoSize = true;
-            this.lblCost.Location = new System.Drawing.Point(571, 12);
+            this.lblCost.Location = new System.Drawing.Point(566, 12);
             this.lblCost.Name = "lblCost";
             this.lblCost.Size = new System.Drawing.Size(41, 21);
             this.lblCost.TabIndex = 0;
@@ -223,39 +230,46 @@
             // txtProductId
             // 
             this.txtProductId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtProductId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtProductId.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductId.Location = new System.Drawing.Point(116, 10);
+            this.txtProductId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtProductId.Location = new System.Drawing.Point(115, 10);
             this.txtProductId.Name = "txtProductId";
             this.txtProductId.ReadOnly = true;
-            this.txtProductId.Size = new System.Drawing.Size(132, 25);
+            this.txtProductId.Size = new System.Drawing.Size(131, 25);
             this.txtProductId.TabIndex = 1;
             this.txtProductId.TabStop = false;
             // 
             // txtCondition
             // 
             this.txtCondition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCondition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtCondition.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCondition.Location = new System.Drawing.Point(367, 10);
+            this.txtCondition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtCondition.Location = new System.Drawing.Point(364, 10);
             this.txtCondition.Name = "txtCondition";
             this.txtCondition.ReadOnly = true;
-            this.txtCondition.Size = new System.Drawing.Size(132, 25);
+            this.txtCondition.Size = new System.Drawing.Size(131, 25);
             this.txtCondition.TabIndex = 1;
             this.txtCondition.TabStop = false;
             // 
             // txtCost
             // 
             this.txtCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtCost.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCost.Location = new System.Drawing.Point(618, 10);
+            this.txtCost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtCost.Location = new System.Drawing.Point(613, 10);
             this.txtCost.Name = "txtCost";
             this.txtCost.ReadOnly = true;
-            this.txtCost.Size = new System.Drawing.Size(137, 25);
+            this.txtCost.Size = new System.Drawing.Size(133, 25);
             this.txtCost.TabIndex = 1;
             this.txtCost.TabStop = false;
             // 
             // grpProductInfo
             // 
             this.grpProductInfo.Controls.Add(this.tblProductInformationSubI);
+            this.grpProductInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.grpProductInfo.Location = new System.Drawing.Point(12, 83);
             this.grpProductInfo.Name = "grpProductInfo";
             this.grpProductInfo.Size = new System.Drawing.Size(758, 138);
@@ -265,6 +279,7 @@
             // 
             // tblProductInformationSubI
             // 
+            this.tblProductInformationSubI.BackColor = System.Drawing.Color.Transparent;
             this.tblProductInformationSubI.ColumnCount = 4;
             this.tblProductInformationSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.01677F));
             this.tblProductInformationSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.32045F));
@@ -276,18 +291,19 @@
             this.tblProductInformationSubI.Controls.Add(this.lblOperatingSystem, 2, 0);
             this.tblProductInformationSubI.Controls.Add(this.txtPlatform, 1, 0);
             this.tblProductInformationSubI.Controls.Add(this.txtOperatingSystem, 3, 0);
-            this.tblProductInformationSubI.Location = new System.Drawing.Point(0, 27);
+            this.tblProductInformationSubI.Location = new System.Drawing.Point(6, 27);
             this.tblProductInformationSubI.Name = "tblProductInformationSubI";
             this.tblProductInformationSubI.RowCount = 1;
             this.tblProductInformationSubI.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblProductInformationSubI.Size = new System.Drawing.Size(758, 46);
+            this.tblProductInformationSubI.Size = new System.Drawing.Size(749, 46);
             this.tblProductInformationSubI.TabIndex = 1;
             // 
             // lblPlatform
             // 
             this.lblPlatform.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblPlatform.AutoSize = true;
-            this.lblPlatform.Location = new System.Drawing.Point(40, 12);
+            this.lblPlatform.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblPlatform.Location = new System.Drawing.Point(39, 12);
             this.lblPlatform.Name = "lblPlatform";
             this.lblPlatform.Size = new System.Drawing.Size(70, 21);
             this.lblPlatform.TabIndex = 0;
@@ -298,7 +314,8 @@
             // 
             this.lblOperatingSystem.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblOperatingSystem.AutoSize = true;
-            this.lblOperatingSystem.Location = new System.Drawing.Point(332, 12);
+            this.lblOperatingSystem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblOperatingSystem.Location = new System.Drawing.Point(329, 12);
             this.lblOperatingSystem.Name = "lblOperatingSystem";
             this.lblOperatingSystem.Size = new System.Drawing.Size(29, 21);
             this.lblOperatingSystem.TabIndex = 0;
@@ -308,22 +325,26 @@
             // txtPlatform
             // 
             this.txtPlatform.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPlatform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtPlatform.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlatform.Location = new System.Drawing.Point(116, 10);
+            this.txtPlatform.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtPlatform.Location = new System.Drawing.Point(115, 10);
             this.txtPlatform.Name = "txtPlatform";
             this.txtPlatform.ReadOnly = true;
-            this.txtPlatform.Size = new System.Drawing.Size(132, 25);
+            this.txtPlatform.Size = new System.Drawing.Size(131, 25);
             this.txtPlatform.TabIndex = 1;
             this.txtPlatform.TabStop = false;
             // 
             // txtOperatingSystem
             // 
             this.txtOperatingSystem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtOperatingSystem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtOperatingSystem.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOperatingSystem.Location = new System.Drawing.Point(367, 10);
+            this.txtOperatingSystem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtOperatingSystem.Location = new System.Drawing.Point(364, 10);
             this.txtOperatingSystem.Name = "txtOperatingSystem";
             this.txtOperatingSystem.ReadOnly = true;
-            this.txtOperatingSystem.Size = new System.Drawing.Size(388, 25);
+            this.txtOperatingSystem.Size = new System.Drawing.Size(382, 25);
             this.txtOperatingSystem.TabIndex = 1;
             this.txtOperatingSystem.TabStop = false;
             this.txtOperatingSystem.Text = "Windows 12";
@@ -333,6 +354,7 @@
             this.grpTechnicalSpecifications.Controls.Add(this.tblTechnicalSpecificationsSubII);
             this.grpTechnicalSpecifications.Controls.Add(this.tblTechnicalSpecificationsSubIII);
             this.grpTechnicalSpecifications.Controls.Add(this.tblTechnicalSpecificationsSubI);
+            this.grpTechnicalSpecifications.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.grpTechnicalSpecifications.Location = new System.Drawing.Point(12, 227);
             this.grpTechnicalSpecifications.Name = "grpTechnicalSpecifications";
             this.grpTechnicalSpecifications.Size = new System.Drawing.Size(758, 190);
@@ -342,6 +364,7 @@
             // 
             // tblTechnicalSpecificationsSubII
             // 
+            this.tblTechnicalSpecificationsSubII.BackColor = System.Drawing.Color.Transparent;
             this.tblTechnicalSpecificationsSubII.ColumnCount = 6;
             this.tblTechnicalSpecificationsSubII.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.01502F));
             this.tblTechnicalSpecificationsSubII.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.31832F));
@@ -355,18 +378,19 @@
             this.tblTechnicalSpecificationsSubII.Controls.Add(this.lblGpuType, 4, 0);
             this.tblTechnicalSpecificationsSubII.Controls.Add(this.txtGpuType, 5, 0);
             this.tblTechnicalSpecificationsSubII.Controls.Add(this.txtCpuNumber, 3, 0);
-            this.tblTechnicalSpecificationsSubII.Location = new System.Drawing.Point(0, 79);
+            this.tblTechnicalSpecificationsSubII.Location = new System.Drawing.Point(6, 79);
             this.tblTechnicalSpecificationsSubII.Name = "tblTechnicalSpecificationsSubII";
             this.tblTechnicalSpecificationsSubII.RowCount = 1;
             this.tblTechnicalSpecificationsSubII.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblTechnicalSpecificationsSubII.Size = new System.Drawing.Size(758, 46);
+            this.tblTechnicalSpecificationsSubII.Size = new System.Drawing.Size(749, 46);
             this.tblTechnicalSpecificationsSubII.TabIndex = 1;
             // 
             // lblCpuBrand
             // 
             this.lblCpuBrand.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCpuBrand.AutoSize = true;
-            this.lblCpuBrand.Location = new System.Drawing.Point(26, 12);
+            this.lblCpuBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblCpuBrand.Location = new System.Drawing.Point(25, 12);
             this.lblCpuBrand.Name = "lblCpuBrand";
             this.lblCpuBrand.Size = new System.Drawing.Size(84, 21);
             this.lblCpuBrand.TabIndex = 0;
@@ -377,7 +401,8 @@
             // 
             this.lblCpuNumber.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCpuNumber.AutoSize = true;
-            this.lblCpuNumber.Location = new System.Drawing.Point(261, 12);
+            this.lblCpuNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblCpuNumber.Location = new System.Drawing.Point(258, 12);
             this.lblCpuNumber.Name = "lblCpuNumber";
             this.lblCpuNumber.Size = new System.Drawing.Size(100, 21);
             this.lblCpuNumber.TabIndex = 0;
@@ -387,11 +412,13 @@
             // txtCpuBrand
             // 
             this.txtCpuBrand.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCpuBrand.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtCpuBrand.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpuBrand.Location = new System.Drawing.Point(116, 10);
+            this.txtCpuBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtCpuBrand.Location = new System.Drawing.Point(115, 10);
             this.txtCpuBrand.Name = "txtCpuBrand";
             this.txtCpuBrand.ReadOnly = true;
-            this.txtCpuBrand.Size = new System.Drawing.Size(132, 25);
+            this.txtCpuBrand.Size = new System.Drawing.Size(131, 25);
             this.txtCpuBrand.TabIndex = 1;
             this.txtCpuBrand.TabStop = false;
             // 
@@ -399,7 +426,8 @@
             // 
             this.lblGpuType.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblGpuType.AutoSize = true;
-            this.lblGpuType.Location = new System.Drawing.Point(535, 12);
+            this.lblGpuType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblGpuType.Location = new System.Drawing.Point(530, 12);
             this.lblGpuType.Name = "lblGpuType";
             this.lblGpuType.Size = new System.Drawing.Size(77, 21);
             this.lblGpuType.TabIndex = 0;
@@ -409,27 +437,32 @@
             // txtGpuType
             // 
             this.txtGpuType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtGpuType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtGpuType.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGpuType.Location = new System.Drawing.Point(618, 10);
+            this.txtGpuType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtGpuType.Location = new System.Drawing.Point(613, 10);
             this.txtGpuType.Name = "txtGpuType";
             this.txtGpuType.ReadOnly = true;
-            this.txtGpuType.Size = new System.Drawing.Size(137, 25);
+            this.txtGpuType.Size = new System.Drawing.Size(133, 25);
             this.txtGpuType.TabIndex = 1;
             this.txtGpuType.TabStop = false;
             // 
             // txtCpuNumber
             // 
             this.txtCpuNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCpuNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtCpuNumber.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpuNumber.Location = new System.Drawing.Point(367, 10);
+            this.txtCpuNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtCpuNumber.Location = new System.Drawing.Point(364, 10);
             this.txtCpuNumber.Name = "txtCpuNumber";
             this.txtCpuNumber.ReadOnly = true;
-            this.txtCpuNumber.Size = new System.Drawing.Size(132, 25);
+            this.txtCpuNumber.Size = new System.Drawing.Size(131, 25);
             this.txtCpuNumber.TabIndex = 1;
             this.txtCpuNumber.TabStop = false;
             // 
             // tblTechnicalSpecificationsSubIII
             // 
+            this.tblTechnicalSpecificationsSubIII.BackColor = System.Drawing.Color.Transparent;
             this.tblTechnicalSpecificationsSubIII.ColumnCount = 6;
             this.tblTechnicalSpecificationsSubIII.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.01502F));
             this.tblTechnicalSpecificationsSubIII.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.31832F));
@@ -443,18 +476,19 @@
             this.tblTechnicalSpecificationsSubIII.Controls.Add(this.lblWebcam, 4, 0);
             this.tblTechnicalSpecificationsSubIII.Controls.Add(this.txtWebcam, 5, 0);
             this.tblTechnicalSpecificationsSubIII.Controls.Add(this.txtCpuSpeed, 3, 0);
-            this.tblTechnicalSpecificationsSubIII.Location = new System.Drawing.Point(0, 131);
+            this.tblTechnicalSpecificationsSubIII.Location = new System.Drawing.Point(6, 131);
             this.tblTechnicalSpecificationsSubIII.Name = "tblTechnicalSpecificationsSubIII";
             this.tblTechnicalSpecificationsSubIII.RowCount = 1;
             this.tblTechnicalSpecificationsSubIII.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblTechnicalSpecificationsSubIII.Size = new System.Drawing.Size(758, 46);
+            this.tblTechnicalSpecificationsSubIII.Size = new System.Drawing.Size(749, 46);
             this.tblTechnicalSpecificationsSubIII.TabIndex = 1;
             // 
             // lblCpuType
             // 
             this.lblCpuType.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCpuType.AutoSize = true;
-            this.lblCpuType.Location = new System.Drawing.Point(35, 12);
+            this.lblCpuType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblCpuType.Location = new System.Drawing.Point(34, 12);
             this.lblCpuType.Name = "lblCpuType";
             this.lblCpuType.Size = new System.Drawing.Size(75, 21);
             this.lblCpuType.TabIndex = 0;
@@ -465,7 +499,8 @@
             // 
             this.lblCpuSpeed.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblCpuSpeed.AutoSize = true;
-            this.lblCpuSpeed.Location = new System.Drawing.Point(276, 12);
+            this.lblCpuSpeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblCpuSpeed.Location = new System.Drawing.Point(273, 12);
             this.lblCpuSpeed.Name = "lblCpuSpeed";
             this.lblCpuSpeed.Size = new System.Drawing.Size(85, 21);
             this.lblCpuSpeed.TabIndex = 0;
@@ -475,11 +510,13 @@
             // txtCpuType
             // 
             this.txtCpuType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCpuType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtCpuType.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpuType.Location = new System.Drawing.Point(116, 10);
+            this.txtCpuType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtCpuType.Location = new System.Drawing.Point(115, 10);
             this.txtCpuType.Name = "txtCpuType";
             this.txtCpuType.ReadOnly = true;
-            this.txtCpuType.Size = new System.Drawing.Size(132, 25);
+            this.txtCpuType.Size = new System.Drawing.Size(131, 25);
             this.txtCpuType.TabIndex = 1;
             this.txtCpuType.TabStop = false;
             // 
@@ -487,7 +524,8 @@
             // 
             this.lblWebcam.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblWebcam.AutoSize = true;
-            this.lblWebcam.Location = new System.Drawing.Point(542, 12);
+            this.lblWebcam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblWebcam.Location = new System.Drawing.Point(537, 12);
             this.lblWebcam.Name = "lblWebcam";
             this.lblWebcam.Size = new System.Drawing.Size(70, 21);
             this.lblWebcam.TabIndex = 0;
@@ -497,27 +535,32 @@
             // txtWebcam
             // 
             this.txtWebcam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtWebcam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtWebcam.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWebcam.Location = new System.Drawing.Point(618, 10);
+            this.txtWebcam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtWebcam.Location = new System.Drawing.Point(613, 10);
             this.txtWebcam.Name = "txtWebcam";
             this.txtWebcam.ReadOnly = true;
-            this.txtWebcam.Size = new System.Drawing.Size(137, 25);
+            this.txtWebcam.Size = new System.Drawing.Size(133, 25);
             this.txtWebcam.TabIndex = 1;
             this.txtWebcam.TabStop = false;
             // 
             // txtCpuSpeed
             // 
             this.txtCpuSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCpuSpeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtCpuSpeed.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpuSpeed.Location = new System.Drawing.Point(367, 10);
+            this.txtCpuSpeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtCpuSpeed.Location = new System.Drawing.Point(364, 10);
             this.txtCpuSpeed.Name = "txtCpuSpeed";
             this.txtCpuSpeed.ReadOnly = true;
-            this.txtCpuSpeed.Size = new System.Drawing.Size(132, 25);
+            this.txtCpuSpeed.Size = new System.Drawing.Size(131, 25);
             this.txtCpuSpeed.TabIndex = 1;
             this.txtCpuSpeed.TabStop = false;
             // 
             // tblTechnicalSpecificationsSubI
             // 
+            this.tblTechnicalSpecificationsSubI.BackColor = System.Drawing.Color.Transparent;
             this.tblTechnicalSpecificationsSubI.ColumnCount = 6;
             this.tblTechnicalSpecificationsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.01502F));
             this.tblTechnicalSpecificationsSubI.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.31832F));
@@ -531,18 +574,19 @@
             this.tblTechnicalSpecificationsSubI.Controls.Add(this.lblHddSize, 4, 0);
             this.tblTechnicalSpecificationsSubI.Controls.Add(this.txtHddSize, 5, 0);
             this.tblTechnicalSpecificationsSubI.Controls.Add(this.txtLcdSize, 3, 0);
-            this.tblTechnicalSpecificationsSubI.Location = new System.Drawing.Point(0, 27);
+            this.tblTechnicalSpecificationsSubI.Location = new System.Drawing.Point(6, 27);
             this.tblTechnicalSpecificationsSubI.Name = "tblTechnicalSpecificationsSubI";
             this.tblTechnicalSpecificationsSubI.RowCount = 1;
             this.tblTechnicalSpecificationsSubI.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblTechnicalSpecificationsSubI.Size = new System.Drawing.Size(758, 46);
+            this.tblTechnicalSpecificationsSubI.Size = new System.Drawing.Size(749, 46);
             this.tblTechnicalSpecificationsSubI.TabIndex = 1;
             // 
             // lblMemory
             // 
             this.lblMemory.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblMemory.AutoSize = true;
-            this.lblMemory.Location = new System.Drawing.Point(40, 12);
+            this.lblMemory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblMemory.Location = new System.Drawing.Point(39, 12);
             this.lblMemory.Name = "lblMemory";
             this.lblMemory.Size = new System.Drawing.Size(70, 21);
             this.lblMemory.TabIndex = 0;
@@ -553,7 +597,8 @@
             // 
             this.lblLcdSize.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblLcdSize.AutoSize = true;
-            this.lblLcdSize.Location = new System.Drawing.Point(294, 12);
+            this.lblLcdSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblLcdSize.Location = new System.Drawing.Point(291, 12);
             this.lblLcdSize.Name = "lblLcdSize";
             this.lblLcdSize.Size = new System.Drawing.Size(67, 21);
             this.lblLcdSize.TabIndex = 0;
@@ -563,11 +608,13 @@
             // txtMemory
             // 
             this.txtMemory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMemory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtMemory.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemory.Location = new System.Drawing.Point(116, 10);
+            this.txtMemory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtMemory.Location = new System.Drawing.Point(115, 10);
             this.txtMemory.Name = "txtMemory";
             this.txtMemory.ReadOnly = true;
-            this.txtMemory.Size = new System.Drawing.Size(132, 25);
+            this.txtMemory.Size = new System.Drawing.Size(131, 25);
             this.txtMemory.TabIndex = 1;
             this.txtMemory.TabStop = false;
             // 
@@ -575,7 +622,8 @@
             // 
             this.lblHddSize.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblHddSize.AutoSize = true;
-            this.lblHddSize.Location = new System.Drawing.Point(571, 12);
+            this.lblHddSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblHddSize.Location = new System.Drawing.Point(566, 12);
             this.lblHddSize.Name = "lblHddSize";
             this.lblHddSize.Size = new System.Drawing.Size(41, 21);
             this.lblHddSize.TabIndex = 0;
@@ -585,48 +633,57 @@
             // txtHddSize
             // 
             this.txtHddSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHddSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtHddSize.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHddSize.Location = new System.Drawing.Point(618, 10);
+            this.txtHddSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtHddSize.Location = new System.Drawing.Point(613, 10);
             this.txtHddSize.Name = "txtHddSize";
             this.txtHddSize.ReadOnly = true;
-            this.txtHddSize.Size = new System.Drawing.Size(137, 25);
+            this.txtHddSize.Size = new System.Drawing.Size(133, 25);
             this.txtHddSize.TabIndex = 1;
             this.txtHddSize.TabStop = false;
             // 
             // txtLcdSize
             // 
             this.txtLcdSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLcdSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtLcdSize.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLcdSize.Location = new System.Drawing.Point(367, 10);
+            this.txtLcdSize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtLcdSize.Location = new System.Drawing.Point(364, 10);
             this.txtLcdSize.Name = "txtLcdSize";
             this.txtLcdSize.ReadOnly = true;
-            this.txtLcdSize.Size = new System.Drawing.Size(132, 25);
+            this.txtLcdSize.Size = new System.Drawing.Size(131, 25);
             this.txtLcdSize.TabIndex = 1;
             this.txtLcdSize.TabStop = false;
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnCancel.Location = new System.Drawing.Point(580, 501);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 40);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // btnNext
             // 
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnNext.Location = new System.Drawing.Point(678, 501);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(92, 40);
             this.btnNext.TabIndex = 6;
             this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // lblClickNextConfirm
             // 
             this.lblClickNextConfirm.AutoSize = true;
+            this.lblClickNextConfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.lblClickNextConfirm.Location = new System.Drawing.Point(8, 511);
             this.lblClickNextConfirm.Name = "lblClickNextConfirm";
             this.lblClickNextConfirm.Size = new System.Drawing.Size(258, 21);
@@ -635,16 +692,19 @@
             // 
             // btnSelectAnotherProduct
             // 
+            this.btnSelectAnotherProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnSelectAnotherProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnSelectAnotherProduct.Location = new System.Drawing.Point(379, 501);
             this.btnSelectAnotherProduct.Name = "btnSelectAnotherProduct";
             this.btnSelectAnotherProduct.Size = new System.Drawing.Size(195, 40);
             this.btnSelectAnotherProduct.TabIndex = 6;
             this.btnSelectAnotherProduct.Text = "Select Another Product";
-            this.btnSelectAnotherProduct.UseVisualStyleBackColor = true;
+            this.btnSelectAnotherProduct.UseVisualStyleBackColor = false;
             this.btnSelectAnotherProduct.Click += new System.EventHandler(this.SelectAnotherProduct_Click);
             // 
             // tblProductInformationSubII
             // 
+            this.tblProductInformationSubII.BackColor = System.Drawing.Color.Transparent;
             this.tblProductInformationSubII.ColumnCount = 4;
             this.tblProductInformationSubII.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.01677F));
             this.tblProductInformationSubII.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.32045F));
@@ -656,18 +716,19 @@
             this.tblProductInformationSubII.Controls.Add(this.lblModel, 2, 0);
             this.tblProductInformationSubII.Controls.Add(this.txtManufacturer, 1, 0);
             this.tblProductInformationSubII.Controls.Add(this.txtModel, 3, 0);
-            this.tblProductInformationSubII.Location = new System.Drawing.Point(12, 162);
+            this.tblProductInformationSubII.Location = new System.Drawing.Point(18, 162);
             this.tblProductInformationSubII.Name = "tblProductInformationSubII";
             this.tblProductInformationSubII.RowCount = 1;
             this.tblProductInformationSubII.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tblProductInformationSubII.Size = new System.Drawing.Size(758, 46);
+            this.tblProductInformationSubII.Size = new System.Drawing.Size(749, 46);
             this.tblProductInformationSubII.TabIndex = 1;
             // 
             // lblManufacturer
             // 
             this.lblManufacturer.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblManufacturer.AutoSize = true;
-            this.lblManufacturer.Location = new System.Drawing.Point(4, 12);
+            this.lblManufacturer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblManufacturer.Location = new System.Drawing.Point(3, 12);
             this.lblManufacturer.Name = "lblManufacturer";
             this.lblManufacturer.Size = new System.Drawing.Size(106, 21);
             this.lblManufacturer.TabIndex = 0;
@@ -678,7 +739,8 @@
             // 
             this.lblModel.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(306, 12);
+            this.lblModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.lblModel.Location = new System.Drawing.Point(303, 12);
             this.lblModel.Name = "lblModel";
             this.lblModel.Size = new System.Drawing.Size(55, 21);
             this.lblModel.TabIndex = 0;
@@ -688,22 +750,26 @@
             // txtManufacturer
             // 
             this.txtManufacturer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtManufacturer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtManufacturer.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtManufacturer.Location = new System.Drawing.Point(116, 10);
+            this.txtManufacturer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtManufacturer.Location = new System.Drawing.Point(115, 10);
             this.txtManufacturer.Name = "txtManufacturer";
             this.txtManufacturer.ReadOnly = true;
-            this.txtManufacturer.Size = new System.Drawing.Size(132, 25);
+            this.txtManufacturer.Size = new System.Drawing.Size(131, 25);
             this.txtManufacturer.TabIndex = 1;
             this.txtManufacturer.TabStop = false;
             // 
             // txtModel
             // 
             this.txtModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtModel.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModel.Location = new System.Drawing.Point(367, 10);
+            this.txtModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.txtModel.Location = new System.Drawing.Point(364, 10);
             this.txtModel.Name = "txtModel";
             this.txtModel.ReadOnly = true;
-            this.txtModel.Size = new System.Drawing.Size(388, 25);
+            this.txtModel.Size = new System.Drawing.Size(382, 25);
             this.txtModel.TabIndex = 1;
             this.txtModel.TabStop = false;
             // 
@@ -715,6 +781,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.ControlBox = false;
             this.Controls.Add(this.tblProductInformationSubII);
@@ -728,6 +795,7 @@
             this.Controls.Add(this.mnuProductInfoForm);
             this.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.mnuProductInfoForm;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ProductInfoForm";

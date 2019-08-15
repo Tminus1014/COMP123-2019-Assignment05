@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectForm));
             this.lblListofComputers = new System.Windows.Forms.Label();
             this.datDollarComputersList = new System.Windows.Forms.DataGridView();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,11 +73,12 @@
             // lblListofComputers
             // 
             this.lblListofComputers.AutoSize = true;
+            this.lblListofComputers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.lblListofComputers.Location = new System.Drawing.Point(15, 17);
             this.lblListofComputers.Name = "lblListofComputers";
-            this.lblListofComputers.Size = new System.Drawing.Size(138, 21);
+            this.lblListofComputers.Size = new System.Drawing.Size(165, 21);
             this.lblListofComputers.TabIndex = 0;
-            this.lblListofComputers.Text = "List of Computers:";
+            this.lblListofComputers.Text = "Select Your Computer:";
             // 
             // datDollarComputersList
             // 
@@ -87,6 +89,7 @@
             this.datDollarComputersList.AutoGenerateColumns = false;
             this.datDollarComputersList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.datDollarComputersList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.datDollarComputersList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.datDollarComputersList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datDollarComputersList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productIDDataGridViewTextBoxColumn,
@@ -454,6 +457,8 @@
             // lblSelectedComputer
             // 
             this.lblSelectedComputer.AutoSize = true;
+            this.lblSelectedComputer.BackColor = System.Drawing.Color.Black;
+            this.lblSelectedComputer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.lblSelectedComputer.Location = new System.Drawing.Point(15, 504);
             this.lblSelectedComputer.Name = "lblSelectedComputer";
             this.lblSelectedComputer.Size = new System.Drawing.Size(147, 21);
@@ -462,7 +467,9 @@
             // 
             // txtSelectedComputer
             // 
+            this.txtSelectedComputer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.txtSelectedComputer.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSelectedComputer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.txtSelectedComputer.Location = new System.Drawing.Point(168, 501);
             this.txtSelectedComputer.Name = "txtSelectedComputer";
             this.txtSelectedComputer.ReadOnly = true;
@@ -473,22 +480,26 @@
             // 
             // btnNext
             // 
+            this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnNext.Location = new System.Drawing.Point(678, 501);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(92, 40);
             this.btnNext.TabIndex = 4;
             this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.BtnNext_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnCancel.Location = new System.Drawing.Point(580, 501);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 40);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // productsTableAdapter
@@ -499,6 +510,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(782, 553);
             this.ControlBox = false;
             this.Controls.Add(this.btnCancel);
@@ -509,6 +521,7 @@
             this.Controls.Add(this.lblListofComputers);
             this.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

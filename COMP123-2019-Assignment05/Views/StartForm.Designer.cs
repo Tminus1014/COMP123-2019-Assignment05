@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.lblGreeting = new System.Windows.Forms.Label();
             this.btnStartOrder = new System.Windows.Forms.Button();
             this.btnLoadOrder = new System.Windows.Forms.Button();
@@ -43,36 +44,43 @@
             // btnStartOrder
             // 
             this.btnStartOrder.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnStartOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnStartOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnStartOrder.Location = new System.Drawing.Point(55, 295);
             this.btnStartOrder.Name = "btnStartOrder";
             this.btnStartOrder.Size = new System.Drawing.Size(162, 40);
             this.btnStartOrder.TabIndex = 0;
             this.btnStartOrder.Text = "Start New Order";
-            this.btnStartOrder.UseVisualStyleBackColor = true;
+            this.btnStartOrder.UseVisualStyleBackColor = false;
             this.btnStartOrder.Click += new System.EventHandler(this.BtnStartOrder_Click);
             // 
             // btnLoadOrder
             // 
+            this.btnLoadOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnLoadOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnLoadOrder.Location = new System.Drawing.Point(55, 341);
             this.btnLoadOrder.Name = "btnLoadOrder";
             this.btnLoadOrder.Size = new System.Drawing.Size(162, 40);
             this.btnLoadOrder.TabIndex = 1;
             this.btnLoadOrder.Text = "Load Saved Order";
-            this.btnLoadOrder.UseVisualStyleBackColor = true;
+            this.btnLoadOrder.UseVisualStyleBackColor = false;
             this.btnLoadOrder.Click += new System.EventHandler(this.BtnLoadOrder_Click);
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
             this.btnExit.Location = new System.Drawing.Point(55, 387);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(162, 40);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::COMP123_2019_Assignment05.Properties.Resources.dollarcomputers_bg1_250x250;
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(250, 250);
@@ -83,6 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(275, 462);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
@@ -92,6 +101,7 @@
             this.Controls.Add(this.lblGreeting);
             this.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 /// <summary>
 /// Program Title: Dollar Computers
 /// Author: Trent B Minia tm- | Student #: 301041132
-/// Date Last Modified: 2019-08-02
+/// Date Last Modified: 2019-08-15
 /// 
 /// Description: A windows form that allows users to order computers from Dollar Computers.
 /// 
@@ -18,6 +18,10 @@ using System.Windows.Forms;
 ///  * 2019-08-10: Connected the Products table from the DollarComputers database
 ///  * 2019-08-11: Added the ability for the ProductInfoForm and OrderForm forms to display 
 ///                product information based on the computer selected in the SelectForm
+///  * 2019-08-12: Added the ability to caluclate and display total price
+///  *             Added the ability to save and load product text files
+///  * 2019-08-15: Added logos, splash screen and icon. Added theme colours to the forms.
+///                Updated about form.
 /// 
 /// </summary>
 namespace COMP123_2019_Assignment05 {
