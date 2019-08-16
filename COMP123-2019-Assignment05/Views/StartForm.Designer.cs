@@ -80,7 +80,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::COMP123_2019_Assignment05.Properties.Resources.dollarcomputers_bg1_250x250;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(250, 250);

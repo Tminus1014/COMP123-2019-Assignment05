@@ -33,8 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>Views\images\icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -70,11 +69,6 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Views\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,13 +122,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
@@ -169,21 +162,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
-    <None Include="Views\images\comp-logo\cybertron.jpg" />
-    <None Include="Views\images\comp-logo\asus.png" />
-    <None Include="Views\images\dollarcomputers-tr.png" />
-    <None Include="Views\images\dollarcomputers-splash.png" />
-    <None Include="Views\images\dollarcomputers-bg2.png" />
-    <None Include="Views\images\dollarcomputers-bg1-250x250.png" />
-    <None Include="Views\images\dollarcomputers-bg1.png" />
-    <None Include="Views\images\comp-logo\toshiba.jpg" />
-    <None Include="Views\images\comp-logo\lenovo.jpg" />
-    <None Include="Views\images\comp-logo\ibuypower.png" />
-    <None Include="Views\images\comp-logo\hp.jpg" />
-    <None Include="Views\images\comp-logo\gateway.png" />
-    <None Include="Views\images\comp-logo\apple.jpg" />
-    <None Include="Views\images\comp-logo\acer.png" />
-    <None Include="Resources\icon.ico" />
+    <Content Include="Views\images\computer-1583432_640.jpg" />
+    <Content Include="Views\images\dollarcomputers-bg1-250x250.png" />
+    <Content Include="Views\images\dollarcomputers-bg1.png" />
+    <Content Include="Views\images\dollarcomputers-bg2.png" />
+    <Content Include="Views\images\dollarcomputers-splash.png" />
+    <Content Include="Views\images\dollarcomputers-tr.png" />
+    <Content Include="Views\images\flat-2126880_1280.png" />
+    <Content Include="Views\images\icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
