@@ -54,6 +54,7 @@ namespace COMP123_2019_Assignment05.Forms {
             txtCost.Text = $"{Program.product.cost:C}";
 
             // Product Icon
+            picProductIcon.SizeMode = PictureBoxSizeMode.Zoom;
             switch (Program.product.manufacturer) {
                 case "Acer":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/acer.png");
@@ -61,25 +62,25 @@ namespace COMP123_2019_Assignment05.Forms {
                 case "Apple":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/apple.jpg");
                     break;
-                case "Asus":
+                case "Asus ":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/asus.png");
                     break;
-                case "CybertonPC":
+                case "CybertronPC":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/cybertron.jpg");
                     break;
-                case "Gateway":
+                case "Gateway ":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/gateway.png");
                     break;
-                case "HP":
+                case "HP ":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/hp.jpg");
                     break;
-                case "iBUYPOWER":
+                case "iBUYPOWER ":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/ibuypower.png");
                     break;
-                case "Lenovo":
+                case "Lenovo ":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/lenovo.jpg");
                     break;
-                case "Toshiba":
+                case "Toshiba ":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/toshiba.jpg");
                     break;
             }
