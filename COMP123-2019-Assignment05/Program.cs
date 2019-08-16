@@ -21,6 +21,7 @@ using System.Windows.Forms;
 ///                Updated about form
 ///  * 2019-08-16: Completed internal documentation.
 ///                Added banner for About Form.
+///                Modified splash screen.
 ///  
 /// All stock images were taking from Pixabay and modified by me to add Dollar Computers-related
 /// visuals. All company logos belong to their respective manufacturers.
