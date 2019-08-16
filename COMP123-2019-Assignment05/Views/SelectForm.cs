@@ -21,6 +21,11 @@ namespace COMP123_2019_Assignment05.Forms {
         /* -= Events =- */
         /* ------------ */
 
+        /// <summary>
+        /// Event handler for the Dollar Computers list.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DatDollarComputersList_SelectionChanged(object sender, EventArgs e) {
             // Collect data of selected computer
             CollectProductInformation();
@@ -30,6 +35,11 @@ namespace COMP123_2019_Assignment05.Forms {
 
         }
 
+        /// <summary>
+        /// Event handler for the Select Form upon loading.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectForm_Load(object sender, EventArgs e) {
             using (var db = new DollarComputersContext()) {
                 db.products.Load();
@@ -37,11 +47,21 @@ namespace COMP123_2019_Assignment05.Forms {
             }
         }
 
+        /// <summary>
+        /// Event handler for the Next button. Hides the Select Form and runs the Product Info Form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnNext_Click(object sender, EventArgs e) {
             Program.selectForm.Hide();
             Program.productInfoForm.Show();
         }
 
+        /// <summary>
+        /// Event handler for the Cancel button. Exits the application.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnCancel_Click(object sender, EventArgs e) {
             Application.Exit();
         }
@@ -50,10 +70,16 @@ namespace COMP123_2019_Assignment05.Forms {
         /* -= Methods =- */
         /* ------------- */
 
+        /// <summary>
+        /// Displays the selected product's manufacturer, model, and cost.
+        /// </summary>
         private void DisplayShortProductInformation() {
             txtSelectedComputer.Text = $"{Program.product.manufacturer} {Program.product.model} ({Program.product.cost:C})";
         }
         
+        /// <summary>
+        /// Collects the selected product information and loads them into the model fields.
+        /// </summary>
         private void CollectProductInformation() {
             // Local scope aliases
             var rowIndex = datDollarComputersList.CurrentCell.RowIndex;
@@ -94,3 +120,12 @@ namespace COMP123_2019_Assignment05.Forms {
 
     }
 }
+
+/*
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/

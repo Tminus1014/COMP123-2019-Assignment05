@@ -1,15 +1,12 @@
 ﻿using COMP123_2019_Assignment05.Forms;
 using COMP123_2019_Assignment05.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /// <summary>
 /// Program Title: Dollar Computers
 /// Author: Trent B Minia tm- | Student #: 301041132
-/// Date Last Modified: 2019-08-15
+/// Date Last Modified: 2019-08-16
 /// 
 /// Description: A windows form that allows users to order computers from Dollar Computers.
 /// 
@@ -20,8 +17,13 @@ using System.Windows.Forms;
 ///                product information based on the computer selected in the SelectForm
 ///  * 2019-08-12: Added the ability to caluclate and display total price
 ///  *             Added the ability to save and load product text files
-///  * 2019-08-15: Added logos, splash screen and icon. Added theme colours to the forms.
-///                Updated about form.
+///  * 2019-08-15: Added logos, splash screen and icon. Added theme colours to the forms
+///                Updated about form
+///  * 2019-08-16: Completed internal documentation.
+///                Added banner for About Form.
+///  
+/// All stock images were taking from Pixabay and modified by me to add Dollar Computers-related
+/// visuals. All company logos belong to their respective manufacturers.
 /// 
 /// </summary>
 namespace COMP123_2019_Assignment05 {
@@ -60,3 +62,12 @@ namespace COMP123_2019_Assignment05 {
         }
     }
 }
+
+/*
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/

@@ -20,6 +20,9 @@ namespace COMP123_2019_Assignment05.Forms {
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void TmrSplashScreen_Tick(object sender, EventArgs e) {
+            // Splash screen timer runs set to 3500 ms.
+            // tick... tick... tick... ti-
+            
             // Disable timer
             tmrSplashScreen.Enabled = false;
 
@@ -29,3 +32,12 @@ namespace COMP123_2019_Assignment05.Forms {
         }
     }
 }
+
+/*
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/

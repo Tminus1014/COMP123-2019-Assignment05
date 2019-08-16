@@ -18,19 +18,39 @@ namespace COMP123_2019_Assignment05.Forms {
         /* -= Events =- */
         /* ------------ */
 
+        /// <summary>
+        /// Event handler for the activation of the Order Form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OrderForm_Activated(object sender, EventArgs e) {
             DisplayProductInformation();
             CalculateTotalCost((double) Program.product.cost);
         }
 
+        /// <summary>
+        /// Event handler for About tool strip menu item, shared with About button. Shows the About Form upon clicking.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e) {
             Program.aboutForm.Show();
         }
 
+        /// <summary>
+        /// Event handler for the Cancel button, shared with the Exit tool strip menu item. Exits the application.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnCancel_Click(object sender, EventArgs e) {
             Application.Exit();
         }
 
+        /// <summary>
+        /// Event handler for the Back button, shared with the Cancel tool strip menu item. Hides the Order Form and shows the Product Info Form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnBack_Click(object sender, EventArgs e) {
             Program.orderForm.Hide();
             Program.productInfoForm.Show();
@@ -41,6 +61,11 @@ namespace COMP123_2019_Assignment05.Forms {
             Application.Exit();
         }
 
+        /// <summary>
+        /// Event handler for the Print menu strip item.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PrintToolStripMenuItem_Click(object sender, EventArgs e) {
             printOrder();
         }
@@ -49,6 +74,9 @@ namespace COMP123_2019_Assignment05.Forms {
         /* -= Methods =- */
         /* ------------- */
 
+        /// <summary>
+        /// Displays the information of the selected product, including product icon.
+        /// </summary>
         private void DisplayProductInformation() {
             txtCondition.Text = $"{Program.product.condition}";
             txtCost.Text = $"{Program.product.cost:C}";
@@ -103,6 +131,10 @@ namespace COMP123_2019_Assignment05.Forms {
             txtWebcam.Text = $"{Program.product.webcam}";
         }
 
+        /// <summary>
+        /// Calculates the total cost given base price and tax.
+        /// </summary>
+        /// <param name="basePrice"></param>
         private void CalculateTotalCost(double basePrice) {
             const double salesTax = 0.13;
             double salesTaxPrice = basePrice * salesTax;
@@ -110,13 +142,30 @@ namespace COMP123_2019_Assignment05.Forms {
             DisplayPrices(salesTaxPrice, totalPrice);
         }
 
+        /// <summary>
+        /// Displays the prices after calculation.
+        /// </summary>
+        /// <param name="salesTaxPrice"></param>
+        /// <param name="totalPrice"></param>
         private void DisplayPrices(double salesTaxPrice, double totalPrice) {
             txtSalesTax.Text = $"{salesTaxPrice:C}";
             txtTotalPrice.Text = $"{totalPrice:C}";
         }
 
+        /// <summary>
+        /// Prints the order information.
+        /// </summary>
         private void printOrder() {
             MessageBox.Show("Printing your order...", "Printing");
         }
     }
 }
+
+/*
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/

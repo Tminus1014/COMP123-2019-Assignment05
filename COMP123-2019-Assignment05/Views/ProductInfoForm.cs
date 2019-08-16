@@ -19,12 +19,17 @@ namespace COMP123_2019_Assignment05.Forms {
         /* -= Events =- */
         /* ------------ */
 
+        /// <summary>
+        /// Event handler for the Product Info Form on load.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfoForm_Load(object sender, EventArgs e) {
             DisplayProductInformation();
         }
 
         /// <summary>
-        /// Allows the user to go back to the SelectForm and select another product. Shared by btnSelectAnotherProduct and selectAnotherProductToolStripMenuItem
+        /// Event handler for Select Another Product button. Allows the user to go back to the SelectForm and select another product. Shared with the Select Another Product menu strip item.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -33,20 +38,39 @@ namespace COMP123_2019_Assignment05.Forms {
             Program.selectForm.Show();
         }
 
+        /// <summary>
+        /// Event handler for the Next button. Hides the Product Info Form and shows the Order Form.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnNext_Click(object sender, EventArgs e) {
             Program.productInfoForm.Hide();
             Program.orderForm.Show();
         }
 
+        /// <summary>
+        /// Event handler for the Cancel button. Exits the application.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnCancel_Click(object sender, EventArgs e) {
             Application.Exit();
         }
 
+        /// <summary>
+        /// Event handler for the Save menu item. Runs saveProductOrder()
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e) {
             saveProductOrder();
         }
 
-        
+        /// <summary>
+        /// Event handler for the Open menu item. Runs openProductOrder() and displays the product information after loading.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OpenToolStripMenuItem_Click(object sender, EventArgs e) {
             openProductOrder();
             DisplayProductInformation();
@@ -122,6 +146,9 @@ namespace COMP123_2019_Assignment05.Forms {
             }
         }
 
+        /// <summary>
+        /// Opens a product order from a txt files and loads them.
+        /// </summary>
         public void openProductOrder() {
             openProductDialog.InitialDirectory = Directory.GetCurrentDirectory();
             openProductDialog.FileName = "Product.txt";
@@ -166,3 +193,12 @@ namespace COMP123_2019_Assignment05.Forms {
         }
     }
 }
+
+/*
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/

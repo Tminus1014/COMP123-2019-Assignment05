@@ -20,7 +20,7 @@ namespace COMP123_2019_Assignment05.Forms {
         /* ------------ */
 
         /// <summary>
-        /// Hides the start form and show the select form.
+        /// Event handler for the Start New Order button. Hides the start form and show the select form.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -28,12 +28,18 @@ namespace COMP123_2019_Assignment05.Forms {
             Program.startForm.Hide();
             Program.selectForm.Show();
         }
+
+        /// <summary>
+        /// Event handler for the Load Order button.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnLoadOrder_Click(object sender, EventArgs e) {
             Program.productInfoForm.openProductOrder();
 
             // Trying to open OpenOrder form without actually selecting a product will cause the program to crash
-            // because the method to calculate and display total price will be executed. Checking if cost has a 
-            // value will determine whether the productInfoForm will be shown.
+            // when proceeding to the Order Form because the method to calculate and display total price will be 
+            // executed. Checking if cost has a value will determine whether the productInfoForm will be shown.
             if (Program.product.cost.HasValue) {
                 Program.startForm.Hide();
                 Program.productInfoForm.Show();
@@ -41,7 +47,7 @@ namespace COMP123_2019_Assignment05.Forms {
         }
 
         /// <summary>
-        /// Exits the application.
+        /// Event handler for Exit button. Exits the application.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -51,3 +57,12 @@ namespace COMP123_2019_Assignment05.Forms {
 
     }
 }
+
+/*
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/
