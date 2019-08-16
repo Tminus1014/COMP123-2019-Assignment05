@@ -128,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
@@ -162,6 +163,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <Content Include="Views\images\comp-logo\acer.png" />
+    <Content Include="Views\images\comp-logo\apple.jpg" />
+    <Content Include="Views\images\comp-logo\asus.png" />
+    <Content Include="Views\images\comp-logo\cybertron.jpg" />
+    <Content Include="Views\images\comp-logo\gateway.png" />
+    <Content Include="Views\images\comp-logo\hp.jpg" />
+    <Content Include="Views\images\comp-logo\ibuypower.png" />
+    <Content Include="Views\images\comp-logo\lenovo.jpg" />
+    <Content Include="Views\images\comp-logo\toshiba.jpg" />
     <Content Include="Views\images\computer-1583432_640.jpg" />
     <Content Include="Views\images\dollarcomputers-bg1-250x250.png" />
     <Content Include="Views\images\dollarcomputers-bg1.png" />

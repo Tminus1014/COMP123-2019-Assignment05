@@ -62,10 +62,10 @@ namespace COMP123_2019_Assignment05.Forms {
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/apple.jpg");
                     break;
                 case "Asus":
-                    picProductIcon.Image = Properties.Resources.asus;
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/asus.png");
                     break;
                 case "CybertonPC":
-                    picProductIcon.Image = Properties.Resources.cybertron;
+                    picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/cybertron.jpg");
                     break;
                 case "Gateway":
                     picProductIcon.Image = Image.FromFile("../../Views/images/comp-logo/gateway.png");
