@@ -28,7 +28,7 @@ through the **Load Saved Order** button. Orders are saved as *.txt* files.
 
 ![Dollar Computers Main Menu](images/dc-ui-1.png "Main menu")
 
-The logo was created through Adobe Photoshop CS6.
+The logo was created in Adobe Photoshop CS6.
 
 Once a new order is started, the user can view a list of computers they can 
 choose from. The *Selected Computer* field will change depending on the currently 
@@ -36,8 +36,56 @@ highlighted computer in the list box.
 
 ![Dollar Computers Computer Selection](images/dc-ui-2.png "Computer selection")
 
+After the user is satisfied with their selection and click the *Next* button,
+they will be able to view information and specs about the computer in a more 
+organized fashion. The menu toolbar provides different options the user can 
+choose:
+
+  * `File`
+    * `Open`: Open an existing order already started
+    * `Save`: Save the current order
+  * `Edit`
+    * `Select Another Product`: Go back to the previous screen and select another
+     computer
+
+The **Select Another Product** button at the bottom functions the same way as 
+the `Edit` > `Select Another Product` menu function.
+
+![Dollar Computers Product Information](images/dc-ui-3.png "Product information")
+
+Upon clicking **Next**, the user will be able to view and confirm their order 
+befor completing it. The user will be able to view pricing information, 
+including the base price, the sales tax, and the total amount after taxes.
+
+The menu toolbar in this windows form provides the following options:
+
+  * `File`
+    * `Print`: This will display a dialogue that says 'Printing your order...'
+               (This doesn't actually print anything!)
+  * `Edit`
+    * `Back`: Goes back to the previous screen/form
+  * `Help`
+    * `About`: Shows the *About Dollar Computers* form
+
+![Dollar Computers Order Confirmation](images/dc-ui-4.png "Order confirmation")
+
+![Dollar Computers About Form](images/dc-ui-5.png "About Dollar Computers form")
+
+The order will have been "confirmed" after the user clicks **Finish**. This 
+doesn't really do anything, other than just close the application.
+
+![Dollar Computers Order Completion](images/dc-ui-6.png "Order completion")
+
 # Requirements
 
+The following is a list of requirements as outlined in the assignment sheet for 
+Assignment 5:
+
+## Overview
+
+
+
+# Disclaimer
 
 I was very proud of how my implementation of Assignment 5 Dollar Computers had 
 turned out. It is one of the assignments from COMP123 at Centennial College that 
